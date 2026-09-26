@@ -1,0 +1,233 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/powerbi/report-definition/v1.0.0/schema.json",
+  "project": "ComplyFlow — Compliance Workflow & Process Intelligence Platform",
+  "phase": 6,
+  "component": "Power BI Reporting & Analytics Architecture",
+  "dataModel": {
+    "tables": [
+      {
+        "name": "FactComplianceRequests",
+        "description": "Core compliance request transaction-level fact table",
+        "source": "database/complyflow.db (table: ComplianceRequest) / data/raw/compliance_requests.csv",
+        "rowCount": 150,
+        "columns": [
+          {"name": "RequestID", "dataType": "string", "isKey": true},
+          {"name": "Title", "dataType": "string"},
+          {"name": "RequestType", "dataType": "string"},
+          {"name": "ProcessArea", "dataType": "string"},
+          {"name": "RiskLevel", "dataType": "string", "foreignKey": "DimSLAPolicy.RiskLevel"},
+          {"name": "Priority", "dataType": "string"},
+          {"name": "Status", "dataType": "string"},
+          {"name": "AssignedAnalyst", "dataType": "string"},
+          {"name": "ComplianceTeam", "dataType": "string"},
+          {"name": "SubmissionDateTime", "dataType": "dateTime"},
+          {"name": "TargetDueDateTime", "dataType": "dateTime"},
+          {"name": "CompletionDateTime", "dataType": "dateTime"},
+          {"name": "SLATargetHours", "dataType": "int64"},
+          {"name": "SLABreachFlag", "dataType": "int64"},
+          {"name": "ApprovalRequired", "dataType": "int64"},
+          {"name": "EscalationFlag", "dataType": "int64"},
+          {"name": "SubmissionDate", "dataType": "date", "calculated": true, "foreignKey": "DimDate.Date"},
+          {"name": "ResolutionTimeHours", "dataType": "decimal", "calculated": true}
+        ]
+      },
+      {
+        "name": "FactAuditLog",
+        "description": "Immutable state transition and audit trail fact table",
+        "source": "database/complyflow.db (table: RequestAuditLog) / data/raw/request_audit_log.csv",
+        "rowCount": 716,
+        "columns": [
+          {"name": "AuditID", "dataType": "int64", "isKey": true},
+          {"name": "RequestID", "dataType": "string", "foreignKey": "FactComplianceRequests.RequestID"},
+          {"name": "Timestamp", "dataType": "dateTime"},
+          {"name": "ActionType", "dataType": "string"},
+          {"name": "PerformedBy", "dataType": "string"},
+          {"name": "OldStatus", "dataType": "string"},
+          {"name": "NewStatus", "dataType": "string"}
+        ]
+      },
+      {
+        "name": "DimSLAPolicy",
+        "description": "SLA policy and governance tier configuration dimension",
+        "source": "database/complyflow.db (table: SLAPolicy) / data/raw/sla_policies.csv",
+        "rowCount": 4,
+        "columns": [
+          {"name": "RiskLevel", "dataType": "string", "isKey": true},
+          {"name": "SLATargetHours", "dataType": "int64"},
+          {"name": "WarningThresholdHours", "dataType": "int64"},
+          {"name": "ApprovalMandatory", "dataType": "int64"},
+          {"name": "DefaultEscalationRole", "dataType": "string"}
+        ]
+      },
+      {
+        "name": "DimDate",
+        "description": "Standard calendar dimension generated via DAX",
+        "source": "Calculated DAX Table (2026-06-01 to 2026-10-31)",
+        "columns": [
+          {"name": "Date", "dataType": "date", "isKey": true},
+          {"name": "Year", "dataType": "int64"},
+          {"name": "MonthNumber", "dataType": "int64"},
+          {"name": "MonthName", "dataType": "string"},
+          {"name": "MonthShort", "dataType": "string"},
+          {"name": "YearMonth", "dataType": "string"},
+          {"name": "Quarter", "dataType": "string"},
+          {"name": "DayOfWeek", "dataType": "string"}
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "fromTable": "FactComplianceRequests",
+        "fromColumn": "SubmissionDate",
+        "toTable": "DimDate",
+        "toColumn": "Date",
+        "cardinality": "manyToOne",
+        "crossFilteringBehavior": "singleDirection",
+        "isActive": true
+      },
+      {
+        "fromTable": "FactComplianceRequests",
+        "fromColumn": "RiskLevel",
+        "toTable": "DimSLAPolicy",
+        "toColumn": "RiskLevel",
+        "cardinality": "manyToOne",
+        "crossFilteringBehavior": "singleDirection",
+        "isActive": true
+      },
+      {
+        "fromTable": "FactAuditLog",
+        "fromColumn": "RequestID",
+        "toTable": "FactComplianceRequests",
+        "toColumn": "RequestID",
+        "cardinality": "manyToOne",
+        "crossFilteringBehavior": "singleDirection",
+        "isActive": true
+      }
+    ]
+  },
+  "measures": [
+    {
+      "name": "Total Requests",
+      "category": "Operational Volume",
+      "expression": "COUNTROWS(FactComplianceRequests)",
+      "formatString": "#,##0",
+      "expectedValue": 150
+    },
+    {
+      "name": "Closed Requests",
+      "category": "Operational Volume",
+      "expression": "CALCULATE(COUNTROWS(FactComplianceRequests), FactComplianceRequests[Status] = \"Closed\")",
+      "formatString": "#,##0",
+      "expectedValue": 100
+    },
+    {
+      "name": "Active Backlog",
+      "category": "Operational Workload",
+      "expression": "CALCULATE(COUNTROWS(FactComplianceRequests), FactComplianceRequests[Status] <> \"Closed\")",
+      "formatString": "#,##0",
+      "expectedValue": 50
+    },
+    {
+      "name": "Overdue Cases",
+      "category": "Operational Risk",
+      "expression": "VAR ReferenceNow = DATETIME(2026, 9, 26, 17, 0, 0) RETURN CALCULATE(COUNTROWS(FactComplianceRequests), FactComplianceRequests[Status] <> \"Closed\", FactComplianceRequests[TargetDueDateTime] < ReferenceNow)",
+      "formatString": "#,##0",
+      "expectedValue": 24
+    },
+    {
+      "name": "Approaching Deadline Cases",
+      "category": "Operational Risk",
+      "expression": "VAR ReferenceNow = DATETIME(2026, 9, 26, 17, 0, 0) RETURN CALCULATE(COUNTROWS(FactComplianceRequests), FactComplianceRequests[Status] <> \"Closed\", FactComplianceRequests[TargetDueDateTime] >= ReferenceNow, FactComplianceRequests[TargetDueDateTime] <= ReferenceNow + (RELATED(DimSLAPolicy[WarningThresholdHours]) / 24))",
+      "formatString": "#,##0",
+      "expectedValue": 0
+    },
+    {
+      "name": "On Track Cases",
+      "category": "Operational Workload",
+      "expression": "[Active Backlog] - [Overdue Cases] - [Approaching Deadline Cases]",
+      "formatString": "#,##0",
+      "expectedValue": 26
+    },
+    {
+      "name": "SLA Breached Cases",
+      "category": "SLA Compliance",
+      "expression": "CALCULATE(COUNTROWS(FactComplianceRequests), FactComplianceRequests[Status] = \"Closed\", FactComplianceRequests[SLABreachFlag] = 1)",
+      "formatString": "#,##0",
+      "expectedValue": 12
+    },
+    {
+      "name": "SLA Breach Rate",
+      "category": "SLA Compliance",
+      "expression": "DIVIDE([SLA Breached Cases], [Closed Requests], 0)",
+      "formatString": "0.0%",
+      "expectedValue": "12.0%"
+    },
+    {
+      "name": "Average Resolution Time",
+      "category": "Operational Efficiency",
+      "expression": "CALCULATE(AVERAGE(FactComplianceRequests[ResolutionTimeHours]), FactComplianceRequests[Status] = \"Closed\")",
+      "formatString": "#,##0.00 \"hrs\"",
+      "expectedValue": 69.27
+    },
+    {
+      "name": "Median Resolution Time",
+      "category": "Operational Efficiency",
+      "expression": "CALCULATE(MEDIAN(FactComplianceRequests[ResolutionTimeHours]), FactComplianceRequests[Status] = \"Closed\")",
+      "formatString": "#,##0.00 \"hrs\"",
+      "expectedValue": 44.79
+    },
+    {
+      "name": "Escalated Cases",
+      "category": "Workflow Governance",
+      "expression": "CALCULATE(COUNTROWS(FactComplianceRequests), FactComplianceRequests[EscalationFlag] = 1)",
+      "formatString": "#,##0",
+      "expectedValue": 17
+    },
+    {
+      "name": "Approval Required Cases",
+      "category": "Workflow Governance",
+      "expression": "CALCULATE(COUNTROWS(FactComplianceRequests), FactComplianceRequests[ApprovalRequired] = 1)",
+      "formatString": "#,##0",
+      "expectedValue": 70
+    },
+    {
+      "name": "High/Critical Active Cases",
+      "category": "Risk Management",
+      "expression": "CALCULATE(COUNTROWS(FactComplianceRequests), FactComplianceRequests[Status] <> \"Closed\", FactComplianceRequests[RiskLevel] IN {\"High\", \"Critical\"})",
+      "formatString": "#,##0",
+      "expectedValue": 15
+    }
+  ],
+  "reportPages": [
+    {
+      "id": "Page1",
+      "title": "Executive Compliance Overview",
+      "targetAudience": "CCO, Leadership, Compliance Directors",
+      "visualCount": 11
+    },
+    {
+      "id": "Page2",
+      "title": "Operational Workload",
+      "targetAudience": "Operational Team Leads, Queue Managers",
+      "visualCount": 6
+    },
+    {
+      "id": "Page3",
+      "title": "SLA & Process Performance",
+      "targetAudience": "Continuous Improvement, Audit Readiness",
+      "visualCount": 7
+    },
+    {
+      "id": "Page4",
+      "title": "Case / Operational Detail",
+      "targetAudience": "Compliance Analysts, Operational Supervisors",
+      "visualCount": 2
+    },
+    {
+      "id": "Page5_Hidden",
+      "title": "Request Audit History",
+      "targetAudience": "Drill-through target for individual case investigation",
+      "visualCount": 1
+    }
+  ]
+}

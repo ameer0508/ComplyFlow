@@ -1,0 +1,5 @@
+RiskLevel,SLATargetHours,WarningThresholdHours,ApprovalMandatory,DefaultEscalationRole
+Critical,24,6,1,Head of Compliance
+High,72,24,1,Compliance Team Lead
+Medium,120,24,0,Operational Queue Manager
+Low,240,48,0,Operations Supervisor

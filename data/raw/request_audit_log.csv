@@ -1,0 +1,717 @@
+AuditID,RequestID,Timestamp,ActionType,PerformedBy,OldStatus,NewStatus,Comments
+1,CR-2026-0001,2026-07-05 19:00:54,Created,Claire Dupont,,Draft,Request drafted by requester.
+2,CR-2026-0001,2026-07-05 20:56:54,Submitted,Claire Dupont,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+3,CR-2026-0001,2026-07-05 21:52:54,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+4,CR-2026-0001,2026-07-07 23:23:55,Approved,Chen Wei,Under Review,Approved,Analyst concluded review with outcome: Approved.
+5,CR-2026-0001,2026-07-08 20:37:12,Closed,Chen Wei,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Policy & Go...
+6,CR-2026-0002,2026-09-25 21:50:22,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+7,CR-2026-0002,2026-09-25 22:41:22,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+8,CR-2026-0002,2026-09-25 23:57:22,Assigned,Aisha Patel,Submitted,Under Review,Case assigned to analyst Aisha Patel. Investigation commenced.
+9,CR-2026-0002,2026-09-26 07:13:27,Approval Requested,Aisha Patel,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+10,CR-2026-0003,2026-09-26 06:07:16,Created,Mateo Silva,,Draft,Request drafted by requester.
+11,CR-2026-0003,2026-09-26 07:12:16,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+12,CR-2026-0004,2026-09-16 19:52:58,Created,Mateo Silva,,Draft,Request drafted by requester.
+13,CR-2026-0004,2026-09-16 21:28:58,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+14,CR-2026-0004,2026-09-16 23:18:58,Assigned,Aisha Patel,Submitted,Under Review,Case assigned to analyst Aisha Patel. Investigation commenced.
+15,CR-2026-0004,2026-09-17 03:56:41,Approval Requested,Aisha Patel,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+16,CR-2026-0005,2026-08-31 15:22:43,Created,Claire Dupont,,Draft,Request drafted by requester.
+17,CR-2026-0005,2026-08-31 15:36:43,Submitted,Claire Dupont,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+18,CR-2026-0005,2026-08-31 16:09:43,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+19,CR-2026-0005,2026-09-01 17:50:20,Approved,Chen Wei,Under Review,Approved,Analyst concluded review with outcome: Approved.
+20,CR-2026-0005,2026-09-02 04:50:35,Closed,Chen Wei,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+21,CR-2026-0006,2026-08-02 10:24:55,Created,Grace Hopper,,Draft,Request drafted by requester.
+22,CR-2026-0006,2026-08-02 11:00:55,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+23,CR-2026-0006,2026-08-02 13:03:55,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+24,CR-2026-0006,2026-08-03 11:25:35,Rejected,Liam O'Connor,Under Review,Rejected,Analyst concluded review with outcome: Rejected.
+25,CR-2026-0006,2026-08-03 21:00:35,Closed,Liam O'Connor,Rejected,Closed,Case finalized and archived. Notes: Review concluded with rejection. Counterparty documentation ...
+26,CR-2026-0007,2026-09-25 07:43:41,Created,Grace Hopper,,Draft,Request drafted by requester.
+27,CR-2026-0007,2026-09-25 09:21:41,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+28,CR-2026-0007,2026-09-25 10:03:41,Assigned,Aisha Patel,Submitted,Under Review,Case assigned to analyst Aisha Patel. Investigation commenced.
+29,CR-2026-0007,2026-09-25 13:33:12,Approval Requested,Aisha Patel,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+30,CR-2026-0008,2026-07-14 08:54:44,Created,James Wilson,,Draft,Request drafted by requester.
+31,CR-2026-0008,2026-07-14 10:48:44,Submitted,James Wilson,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+32,CR-2026-0008,2026-07-14 11:26:44,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+33,CR-2026-0008,2026-07-19 08:21:26,Approved,Sofia Rodriguez,Under Review,Approved,Analyst concluded review with outcome: Approved.
+34,CR-2026-0008,2026-07-21 10:27:44,Closed,Sofia Rodriguez,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+35,CR-2026-0009,2026-09-05 04:54:38,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+36,CR-2026-0009,2026-09-05 04:59:38,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+37,CR-2026-0009,2026-09-05 07:36:38,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+38,CR-2026-0009,2026-09-07 16:28:56,Approved,Liam O'Connor,Under Review,Approved,Analyst concluded review with outcome: Approved.
+39,CR-2026-0009,2026-09-08 16:51:21,Closed,Liam O'Connor,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Sanctions c...
+40,CR-2026-0010,2026-07-20 08:52:09,Created,James Wilson,,Draft,Request drafted by requester.
+41,CR-2026-0010,2026-07-20 09:04:09,Submitted,James Wilson,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+42,CR-2026-0010,2026-07-20 11:34:09,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+43,CR-2026-0010,2026-07-21 16:54:57,Approved,Chen Wei,Under Review,Approved,Analyst concluded review with outcome: Approved.
+44,CR-2026-0010,2026-07-22 05:29:35,Closed,Chen Wei,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under KYC Operati...
+45,CR-2026-0011,2026-07-25 07:35:54,Created,Oliver Queen,,Draft,Request drafted by requester.
+46,CR-2026-0011,2026-07-25 08:10:54,Submitted,Oliver Queen,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+47,CR-2026-0011,2026-07-25 11:03:54,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+48,CR-2026-0011,2026-08-03 06:04:14,Approved,Liam O'Connor,Under Review,Approved,Analyst concluded review with outcome: Approved.
+49,CR-2026-0011,2026-08-07 00:30:06,Closed,Liam O'Connor,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+50,CR-2026-0012,2026-07-25 18:13:45,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+51,CR-2026-0012,2026-07-25 18:58:45,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+52,CR-2026-0012,2026-07-25 19:31:45,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+53,CR-2026-0012,2026-07-26 15:26:23,Approved,Marcus Brody,Under Review,Approved,Analyst concluded review with outcome: Approved.
+54,CR-2026-0012,2026-07-26 23:58:23,Closed,Marcus Brody,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+55,CR-2026-0013,2026-08-08 05:04:08,Created,Oliver Queen,,Draft,Request drafted by requester.
+56,CR-2026-0013,2026-08-08 05:25:08,Submitted,Oliver Queen,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+57,CR-2026-0013,2026-08-08 07:59:08,Assigned,Aisha Patel,Submitted,Under Review,Case assigned to analyst Aisha Patel. Investigation commenced.
+58,CR-2026-0013,2026-08-10 22:29:24,Approved,Aisha Patel,Under Review,Approved,Analyst concluded review with outcome: Approved.
+59,CR-2026-0013,2026-08-12 01:16:39,Closed,Aisha Patel,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+60,CR-2026-0014,2026-09-15 03:32:29,Created,James Wilson,,Draft,Request drafted by requester.
+61,CR-2026-0014,2026-09-15 04:15:29,Submitted,James Wilson,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+62,CR-2026-0014,2026-09-15 05:04:29,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+63,CR-2026-0014,2026-09-15 08:59:02,Escalated,System Automation,Under Review,Escalated,Escalated to Head of Compliance. Reason: Automated escalation: Target SLA turnaround breached.
+64,CR-2026-0015,2026-08-21 12:40:41,Created,Claire Dupont,,Draft,Request drafted by requester.
+65,CR-2026-0015,2026-08-21 14:12:41,Submitted,Claire Dupont,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+66,CR-2026-0015,2026-08-21 14:40:41,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+67,CR-2026-0015,2026-08-25 02:59:15,Approved,Chen Wei,Under Review,Approved,Analyst concluded review with outcome: Approved.
+68,CR-2026-0015,2026-08-26 15:07:13,Closed,Chen Wei,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Policy & Go...
+69,CR-2026-0016,2026-07-28 10:31:39,Created,Mateo Silva,,Draft,Request drafted by requester.
+70,CR-2026-0016,2026-07-28 11:09:39,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+71,CR-2026-0016,2026-07-28 11:43:39,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+72,CR-2026-0016,2026-07-30 08:22:10,Approved,Marcus Brody,Under Review,Approved,Analyst concluded review with outcome: Approved.
+73,CR-2026-0016,2026-07-31 03:30:07,Closed,Marcus Brody,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+74,CR-2026-0017,2026-09-20 09:34:56,Created,Oliver Queen,,Draft,Request drafted by requester.
+75,CR-2026-0017,2026-09-20 09:44:56,Submitted,Oliver Queen,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+76,CR-2026-0017,2026-09-20 10:09:56,Assigned,Aisha Patel,Submitted,Under Review,Case assigned to analyst Aisha Patel. Investigation commenced.
+77,CR-2026-0017,2026-09-20 17:33:33,Approval Requested,Aisha Patel,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+78,CR-2026-0018,2026-07-19 05:26:41,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+79,CR-2026-0018,2026-07-19 06:01:41,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+80,CR-2026-0018,2026-07-19 08:01:41,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+81,CR-2026-0018,2026-07-20 03:53:35,Approval Requested,Marcus Brody,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+82,CR-2026-0018,2026-07-20 23:45:30,Approved,David Sterling,Pending Approval,Approved,Management sign-off granted by David Sterling.
+83,CR-2026-0018,2026-07-21 09:41:27,Closed,Marcus Brody,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+84,CR-2026-0019,2026-09-09 18:20:04,Created,Mateo Silva,,Draft,Request drafted by requester.
+85,CR-2026-0019,2026-09-09 20:16:04,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+86,CR-2026-0019,2026-09-09 21:29:04,Assigned,Elena Vance,Submitted,Under Review,Case assigned to analyst Elena Vance. Investigation commenced.
+87,CR-2026-0019,2026-09-10 05:48:07,Approval Requested,Elena Vance,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+88,CR-2026-0019,2026-09-10 14:07:10,Approved,Rachel Kensington,Pending Approval,Approved,Management sign-off granted by Rachel Kensington.
+89,CR-2026-0019,2026-09-10 18:16:42,Closed,Elena Vance,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Sanctions c...
+90,CR-2026-0020,2026-08-20 20:46:39,Created,James Wilson,,Draft,Request drafted by requester.
+91,CR-2026-0020,2026-08-20 21:56:39,Submitted,James Wilson,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+92,CR-2026-0020,2026-08-20 23:17:39,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+93,CR-2026-0020,2026-08-21 10:52:56,Escalated,Liam O'Connor,Under Review,Escalated,Escalated to Operational Queue Manager. Reason: Complex jurisdictional nexus requiring specialist review.
+94,CR-2026-0020,2026-08-23 16:01:59,Approved,Liam O'Connor,Under Review,Approved,Analyst concluded review with outcome: Approved.
+95,CR-2026-0020,2026-08-24 14:48:43,Closed,Liam O'Connor,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+96,CR-2026-0021,2026-09-17 23:25:17,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+97,CR-2026-0021,2026-09-18 00:35:17,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+98,CR-2026-0021,2026-09-18 03:17:17,Assigned,Elena Vance,Submitted,Under Review,Case assigned to analyst Elena Vance. Investigation commenced.
+99,CR-2026-0022,2026-09-16 20:48:29,Created,Mateo Silva,,Draft,Request drafted by requester.
+100,CR-2026-0022,2026-09-16 22:27:29,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+101,CR-2026-0022,2026-09-17 00:15:29,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+102,CR-2026-0022,2026-09-17 04:50:45,Approval Requested,Chen Wei,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+103,CR-2026-0023,2026-08-24 07:22:40,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+104,CR-2026-0023,2026-08-24 08:19:40,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+105,CR-2026-0023,2026-08-24 09:18:40,Assigned,Aisha Patel,Submitted,Under Review,Case assigned to analyst Aisha Patel. Investigation commenced.
+106,CR-2026-0023,2026-08-24 19:11:53,Approval Requested,Aisha Patel,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+107,CR-2026-0023,2026-08-25 05:05:06,Approved,Rachel Kensington,Pending Approval,Approved,Management sign-off granted by Rachel Kensington.
+108,CR-2026-0023,2026-08-25 10:01:43,Closed,Aisha Patel,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Policy & Go...
+109,CR-2026-0024,2026-09-20 08:23:58,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+110,CR-2026-0024,2026-09-20 09:42:58,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+111,CR-2026-0024,2026-09-20 11:56:58,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+112,CR-2026-0025,2026-09-23 21:46:11,Created,Mateo Silva,,Draft,Request drafted by requester.
+113,CR-2026-0025,2026-09-23 22:01:11,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+114,CR-2026-0025,2026-09-24 00:58:11,Assigned,Aisha Patel,Submitted,Under Review,Case assigned to analyst Aisha Patel. Investigation commenced.
+115,CR-2026-0025,2026-09-24 06:41:07,Approval Requested,Aisha Patel,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+116,CR-2026-0026,2026-09-25 12:56:36,Created,Claire Dupont,,Draft,Request drafted by requester.
+117,CR-2026-0026,2026-09-25 14:01:36,Submitted,Claire Dupont,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+118,CR-2026-0026,2026-09-25 14:34:36,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+119,CR-2026-0026,2026-09-25 20:35:10,Escalated,Sofia Rodriguez,Under Review,Escalated,Escalated to Operational Queue Manager. Reason: Urgent counterparty risk query flagged during preliminary review.
+120,CR-2026-0027,2026-09-06 13:01:46,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+121,CR-2026-0027,2026-09-06 14:34:46,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+122,CR-2026-0027,2026-09-06 17:01:46,Assigned,Elena Vance,Submitted,Under Review,Case assigned to analyst Elena Vance. Investigation commenced.
+123,CR-2026-0027,2026-09-07 13:42:57,Approval Requested,Elena Vance,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+124,CR-2026-0027,2026-09-08 10:24:09,Approved,Rachel Kensington,Pending Approval,Approved,Management sign-off granted by Rachel Kensington.
+125,CR-2026-0027,2026-09-08 20:44:44,Closed,Elena Vance,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Policy & Go...
+126,CR-2026-0028,2026-07-25 21:56:25,Created,Claire Dupont,,Draft,Request drafted by requester.
+127,CR-2026-0028,2026-07-25 23:12:25,Submitted,Claire Dupont,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+128,CR-2026-0028,2026-07-26 01:47:25,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+129,CR-2026-0028,2026-07-26 07:16:20,Approval Requested,Sofia Rodriguez,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+130,CR-2026-0028,2026-07-26 12:45:15,Approved,Arthur Pendelton,Pending Approval,Approved,Management sign-off granted by Arthur Pendelton.
+131,CR-2026-0028,2026-07-26 15:29:42,Closed,Sofia Rodriguez,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+132,CR-2026-0029,2026-09-14 20:13:03,Created,Mateo Silva,,Draft,Request drafted by requester.
+133,CR-2026-0029,2026-09-14 20:53:03,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+134,CR-2026-0029,2026-09-14 22:09:03,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+135,CR-2026-0030,2026-09-12 02:01:23,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+136,CR-2026-0030,2026-09-12 02:25:23,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+137,CR-2026-0030,2026-09-12 04:04:23,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+138,CR-2026-0030,2026-09-13 00:30:11,Approved,Marcus Brody,Under Review,Approved,Analyst concluded review with outcome: Approved.
+139,CR-2026-0030,2026-09-13 09:15:31,Closed,Marcus Brody,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+140,CR-2026-0031,2026-07-03 03:01:59,Created,Mateo Silva,,Draft,Request drafted by requester.
+141,CR-2026-0031,2026-07-03 03:08:59,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+142,CR-2026-0031,2026-07-03 05:10:59,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+143,CR-2026-0031,2026-07-04 05:39:11,Approved,Sofia Rodriguez,Under Review,Approved,Analyst concluded review with outcome: Approved.
+144,CR-2026-0031,2026-07-04 16:08:25,Closed,Sofia Rodriguez,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under KYC Operati...
+145,CR-2026-0032,2026-08-27 06:44:47,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+146,CR-2026-0032,2026-08-27 07:51:47,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+147,CR-2026-0032,2026-08-27 08:38:47,Assigned,Elena Vance,Submitted,Under Review,Case assigned to analyst Elena Vance. Investigation commenced.
+148,CR-2026-0032,2026-08-28 02:08:16,Approval Requested,Elena Vance,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+149,CR-2026-0032,2026-08-28 19:37:44,Approved,Arthur Pendelton,Pending Approval,Approved,Management sign-off granted by Arthur Pendelton.
+150,CR-2026-0032,2026-08-29 04:22:28,Closed,Elena Vance,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under KYC Operati...
+151,CR-2026-0033,2026-09-11 18:48:29,Created,Grace Hopper,,Draft,Request drafted by requester.
+152,CR-2026-0033,2026-09-11 19:47:29,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+153,CR-2026-0033,2026-09-11 21:39:29,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+154,CR-2026-0033,2026-09-11 23:34:21,Approval Requested,Marcus Brody,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+155,CR-2026-0033,2026-09-12 01:29:13,Approved,Rachel Kensington,Pending Approval,Approved,Management sign-off granted by Rachel Kensington.
+156,CR-2026-0033,2026-09-12 02:26:39,Closed,Marcus Brody,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Policy & Go...
+157,CR-2026-0034,2026-09-16 02:07:58,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+158,CR-2026-0034,2026-09-16 02:18:58,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+159,CR-2026-0034,2026-09-16 02:50:58,Assigned,Aisha Patel,Submitted,Under Review,Case assigned to analyst Aisha Patel. Investigation commenced.
+160,CR-2026-0034,2026-09-16 12:39:42,Approved,Aisha Patel,Under Review,Approved,Analyst concluded review with outcome: Approved.
+161,CR-2026-0035,2026-09-24 03:16:41,Created,James Wilson,,Draft,Request drafted by requester.
+162,CR-2026-0035,2026-09-24 03:37:41,Submitted,James Wilson,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+163,CR-2026-0035,2026-09-24 06:16:41,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+164,CR-2026-0035,2026-09-24 17:42:12,Escalated,System Automation,Under Review,Escalated,Escalated to Head of Compliance. Reason: Automated escalation: Target SLA turnaround breached.
+165,CR-2026-0036,2026-09-24 14:04:28,Created,Grace Hopper,,Draft,Request drafted by requester.
+166,CR-2026-0036,2026-09-24 15:53:28,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+167,CR-2026-0036,2026-09-24 16:35:28,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+168,CR-2026-0037,2026-09-13 11:27:48,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+169,CR-2026-0037,2026-09-13 11:57:48,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+170,CR-2026-0037,2026-09-13 14:52:48,Assigned,Elena Vance,Submitted,Under Review,Case assigned to analyst Elena Vance. Investigation commenced.
+171,CR-2026-0038,2026-07-15 08:44:29,Created,Mateo Silva,,Draft,Request drafted by requester.
+172,CR-2026-0038,2026-07-15 10:01:29,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+173,CR-2026-0038,2026-07-15 11:43:29,Assigned,Elena Vance,Submitted,Under Review,Case assigned to analyst Elena Vance. Investigation commenced.
+174,CR-2026-0038,2026-07-17 00:19:24,Approved,Elena Vance,Under Review,Approved,Analyst concluded review with outcome: Approved.
+175,CR-2026-0038,2026-07-17 16:00:30,Closed,Elena Vance,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+176,CR-2026-0039,2026-09-14 03:04:46,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+177,CR-2026-0039,2026-09-14 04:07:46,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+178,CR-2026-0039,2026-09-14 05:07:46,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+179,CR-2026-0040,2026-08-11 12:17:42,Created,Oliver Queen,,Draft,Request drafted by requester.
+180,CR-2026-0040,2026-08-11 14:07:42,Submitted,Oliver Queen,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+181,CR-2026-0040,2026-08-11 15:33:42,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+182,CR-2026-0040,2026-08-12 22:06:35,Approved,Chen Wei,Under Review,Approved,Analyst concluded review with outcome: Approved.
+183,CR-2026-0040,2026-08-13 11:12:07,Closed,Chen Wei,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under KYC Operati...
+184,CR-2026-0041,2026-09-16 06:38:06,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+185,CR-2026-0041,2026-09-16 08:31:06,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+186,CR-2026-0041,2026-09-16 11:18:06,Assigned,Aisha Patel,Submitted,Under Review,Case assigned to analyst Aisha Patel. Investigation commenced.
+187,CR-2026-0041,2026-09-17 10:25:33,Approved,Aisha Patel,Under Review,Approved,Analyst concluded review with outcome: Approved.
+188,CR-2026-0041,2026-09-17 20:20:11,Closed,Aisha Patel,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Policy & Go...
+189,CR-2026-0042,2026-09-24 20:00:25,Created,James Wilson,,Draft,Request drafted by requester.
+190,CR-2026-0043,2026-08-25 13:00:39,Created,James Wilson,,Draft,Request drafted by requester.
+191,CR-2026-0043,2026-08-25 13:56:39,Submitted,James Wilson,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+192,CR-2026-0043,2026-08-25 16:31:39,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+193,CR-2026-0043,2026-08-26 09:11:59,Approval Requested,Chen Wei,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+194,CR-2026-0043,2026-08-27 01:52:18,Approved,Arthur Pendelton,Pending Approval,Approved,Management sign-off granted by Arthur Pendelton.
+195,CR-2026-0043,2026-08-27 10:12:28,Closed,Chen Wei,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+196,CR-2026-0044,2026-09-02 21:39:38,Created,James Wilson,,Draft,Request drafted by requester.
+197,CR-2026-0044,2026-09-02 21:59:38,Submitted,James Wilson,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+198,CR-2026-0044,2026-09-03 00:17:38,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+199,CR-2026-0044,2026-09-05 08:06:03,Approved,Chen Wei,Under Review,Approved,Analyst concluded review with outcome: Approved.
+200,CR-2026-0044,2026-09-06 08:01:04,Closed,Chen Wei,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+201,CR-2026-0045,2026-09-25 20:41:10,Created,James Wilson,,Draft,Request drafted by requester.
+202,CR-2026-0045,2026-09-25 21:32:10,Submitted,James Wilson,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+203,CR-2026-0046,2026-07-03 05:35:53,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+204,CR-2026-0046,2026-07-03 07:01:53,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+205,CR-2026-0046,2026-07-03 08:43:53,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+206,CR-2026-0046,2026-07-10 09:32:33,Approved,Liam O'Connor,Under Review,Approved,Analyst concluded review with outcome: Approved.
+207,CR-2026-0046,2026-07-13 09:53:24,Closed,Liam O'Connor,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under KYC Operati...
+208,CR-2026-0047,2026-08-16 20:10:27,Created,Mateo Silva,,Draft,Request drafted by requester.
+209,CR-2026-0047,2026-08-16 20:24:27,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+210,CR-2026-0047,2026-08-16 21:42:27,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+211,CR-2026-0047,2026-08-16 23:18:29,Escalated,Sofia Rodriguez,Under Review,Escalated,Escalated to Head of Compliance. Reason: Complex jurisdictional nexus requiring specialist review.
+212,CR-2026-0047,2026-08-16 23:56:53,Approval Requested,Sofia Rodriguez,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+213,CR-2026-0047,2026-08-17 00:35:17,Approved,Arthur Pendelton,Pending Approval,Approved,Management sign-off granted by Arthur Pendelton.
+214,CR-2026-0047,2026-08-17 00:54:30,Closed,Sofia Rodriguez,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+215,CR-2026-0048,2026-09-22 03:19:27,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+216,CR-2026-0048,2026-09-22 04:39:27,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+217,CR-2026-0048,2026-09-22 07:32:27,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+218,CR-2026-0048,2026-09-22 10:08:35,Approved,Liam O'Connor,Under Review,Approved,Analyst concluded review with outcome: Approved.
+219,CR-2026-0049,2026-09-12 00:38:23,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+220,CR-2026-0049,2026-09-12 01:13:23,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+221,CR-2026-0049,2026-09-12 02:27:23,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+222,CR-2026-0049,2026-09-12 09:26:19,Approval Requested,Marcus Brody,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+223,CR-2026-0049,2026-09-12 16:25:16,Approved,Arthur Pendelton,Pending Approval,Approved,Management sign-off granted by Arthur Pendelton.
+224,CR-2026-0049,2026-09-12 19:54:44,Closed,Marcus Brody,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Policy & Go...
+225,CR-2026-0050,2026-07-16 01:08:15,Created,Claire Dupont,,Draft,Request drafted by requester.
+226,CR-2026-0050,2026-07-16 02:33:15,Submitted,Claire Dupont,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+227,CR-2026-0050,2026-07-16 03:56:15,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+228,CR-2026-0050,2026-07-17 02:31:37,Approval Requested,Sofia Rodriguez,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+229,CR-2026-0050,2026-07-18 01:06:59,Approved,Arthur Pendelton,Pending Approval,Approved,Management sign-off granted by Arthur Pendelton.
+230,CR-2026-0050,2026-07-18 12:24:40,Closed,Sofia Rodriguez,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+231,CR-2026-0051,2026-09-13 17:31:01,Created,Grace Hopper,,Draft,Request drafted by requester.
+232,CR-2026-0051,2026-09-13 18:32:01,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+233,CR-2026-0051,2026-09-13 20:04:01,Assigned,Elena Vance,Submitted,Under Review,Case assigned to analyst Elena Vance. Investigation commenced.
+234,CR-2026-0052,2026-09-15 09:33:14,Created,James Wilson,,Draft,Request drafted by requester.
+235,CR-2026-0052,2026-09-15 10:33:14,Submitted,James Wilson,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+236,CR-2026-0052,2026-09-15 13:15:14,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+237,CR-2026-0052,2026-09-16 14:41:08,Rejected,Chen Wei,Under Review,Rejected,Analyst concluded review with outcome: Rejected.
+238,CR-2026-0052,2026-09-17 01:35:05,Closed,Chen Wei,Rejected,Closed,Case finalized and archived. Notes: Review concluded with rejection. Counterparty documentation ...
+239,CR-2026-0053,2026-07-18 02:45:05,Created,Oliver Queen,,Draft,Request drafted by requester.
+240,CR-2026-0053,2026-07-18 03:12:05,Submitted,Oliver Queen,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+241,CR-2026-0053,2026-07-18 03:50:05,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+242,CR-2026-0053,2026-07-18 16:49:00,Approval Requested,Liam O'Connor,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+243,CR-2026-0053,2026-07-19 05:47:55,Approved,Arthur Pendelton,Pending Approval,Approved,Management sign-off granted by Arthur Pendelton.
+244,CR-2026-0053,2026-07-19 12:17:23,Closed,Liam O'Connor,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under KYC Operati...
+245,CR-2026-0054,2026-08-15 21:44:56,Created,Claire Dupont,,Draft,Request drafted by requester.
+246,CR-2026-0054,2026-08-15 22:52:56,Submitted,Claire Dupont,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+247,CR-2026-0054,2026-08-15 23:29:56,Assigned,Aisha Patel,Submitted,Under Review,Case assigned to analyst Aisha Patel. Investigation commenced.
+248,CR-2026-0054,2026-08-16 04:03:18,Escalated,Aisha Patel,Under Review,Escalated,Escalated to Operational Queue Manager. Reason: Complex jurisdictional nexus requiring specialist review.
+249,CR-2026-0054,2026-08-17 12:34:51,Approved,Aisha Patel,Under Review,Approved,Analyst concluded review with outcome: Approved.
+250,CR-2026-0054,2026-08-18 02:31:13,Closed,Aisha Patel,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+251,CR-2026-0055,2026-09-19 23:08:10,Created,Grace Hopper,,Draft,Request drafted by requester.
+252,CR-2026-0055,2026-09-19 23:19:10,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+253,CR-2026-0055,2026-09-20 02:13:10,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+254,CR-2026-0056,2026-07-04 14:19:24,Created,Oliver Queen,,Draft,Request drafted by requester.
+255,CR-2026-0056,2026-07-04 15:20:24,Submitted,Oliver Queen,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+256,CR-2026-0056,2026-07-04 15:38:24,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+257,CR-2026-0056,2026-07-04 20:25:19,Approval Requested,Chen Wei,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+258,CR-2026-0056,2026-07-05 01:12:14,Approved,David Sterling,Pending Approval,Approved,Management sign-off granted by David Sterling.
+259,CR-2026-0056,2026-07-05 03:35:42,Closed,Chen Wei,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Sanctions c...
+260,CR-2026-0057,2026-07-27 13:54:26,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+261,CR-2026-0057,2026-07-27 14:18:26,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+262,CR-2026-0057,2026-07-27 15:35:26,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+263,CR-2026-0057,2026-07-27 18:28:43,Approval Requested,Liam O'Connor,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+264,CR-2026-0057,2026-07-27 21:21:59,Approved,Rachel Kensington,Pending Approval,Approved,Management sign-off granted by Rachel Kensington.
+265,CR-2026-0057,2026-07-27 22:48:38,Closed,Liam O'Connor,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under KYC Operati...
+266,CR-2026-0058,2026-07-09 19:55:41,Created,Grace Hopper,,Draft,Request drafted by requester.
+267,CR-2026-0058,2026-07-09 20:35:41,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+268,CR-2026-0058,2026-07-09 22:06:41,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+269,CR-2026-0058,2026-07-14 18:53:08,Approved,Liam O'Connor,Under Review,Approved,Analyst concluded review with outcome: Approved.
+270,CR-2026-0058,2026-07-16 20:55:53,Closed,Liam O'Connor,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+271,CR-2026-0059,2026-08-22 09:03:29,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+272,CR-2026-0059,2026-08-22 10:45:29,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+273,CR-2026-0059,2026-08-22 12:45:29,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+274,CR-2026-0059,2026-08-23 11:05:04,Approval Requested,Sofia Rodriguez,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+275,CR-2026-0059,2026-08-24 09:24:38,Approved,Arthur Pendelton,Pending Approval,Approved,Management sign-off granted by Arthur Pendelton.
+276,CR-2026-0059,2026-08-24 20:34:26,Closed,Sofia Rodriguez,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under KYC Operati...
+277,CR-2026-0060,2026-07-15 16:06:09,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+278,CR-2026-0060,2026-07-15 17:34:09,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+279,CR-2026-0060,2026-07-15 19:41:09,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+280,CR-2026-0060,2026-07-15 23:54:20,Approval Requested,Marcus Brody,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+281,CR-2026-0060,2026-07-16 04:07:30,Approved,Arthur Pendelton,Pending Approval,Approved,Management sign-off granted by Arthur Pendelton.
+282,CR-2026-0060,2026-07-16 06:14:06,Closed,Marcus Brody,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+283,CR-2026-0061,2026-07-01 03:53:30,Created,Mateo Silva,,Draft,Request drafted by requester.
+284,CR-2026-0061,2026-07-01 04:07:30,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+285,CR-2026-0061,2026-07-01 04:42:30,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+286,CR-2026-0061,2026-07-03 12:40:00,Approved,Liam O'Connor,Under Review,Approved,Analyst concluded review with outcome: Approved.
+287,CR-2026-0061,2026-07-04 12:38:55,Closed,Liam O'Connor,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+288,CR-2026-0062,2026-07-21 16:51:50,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+289,CR-2026-0062,2026-07-21 18:33:50,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+290,CR-2026-0062,2026-07-21 19:46:50,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+291,CR-2026-0062,2026-07-22 00:20:16,Approval Requested,Liam O'Connor,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+292,CR-2026-0062,2026-07-22 04:53:41,Approved,Arthur Pendelton,Pending Approval,Approved,Management sign-off granted by Arthur Pendelton.
+293,CR-2026-0062,2026-07-22 07:10:24,Closed,Liam O'Connor,Rejected,Closed,Case finalized and archived. Notes: Review concluded with rejection. Counterparty documentation ...
+294,CR-2026-0063,2026-08-13 06:17:26,Created,Mateo Silva,,Draft,Request drafted by requester.
+295,CR-2026-0063,2026-08-13 07:50:26,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+296,CR-2026-0063,2026-08-13 09:40:26,Assigned,Aisha Patel,Submitted,Under Review,Case assigned to analyst Aisha Patel. Investigation commenced.
+297,CR-2026-0063,2026-08-14 14:59:56,Approved,Aisha Patel,Under Review,Approved,Analyst concluded review with outcome: Approved.
+298,CR-2026-0063,2026-08-15 03:34:01,Closed,Aisha Patel,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Sanctions c...
+299,CR-2026-0064,2026-09-23 18:53:39,Created,Claire Dupont,,Draft,Request drafted by requester.
+300,CR-2026-0064,2026-09-23 20:16:39,Submitted,Claire Dupont,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+301,CR-2026-0064,2026-09-23 21:32:39,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+302,CR-2026-0064,2026-09-24 04:01:06,Escalated,Liam O'Connor,Under Review,Escalated,Escalated to Operational Queue Manager. Reason: Urgent counterparty risk query flagged during preliminary review.
+303,CR-2026-0065,2026-07-06 22:52:52,Created,Grace Hopper,,Draft,Request drafted by requester.
+304,CR-2026-0065,2026-07-06 23:56:52,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+305,CR-2026-0065,2026-07-07 01:59:52,Assigned,Aisha Patel,Submitted,Under Review,Case assigned to analyst Aisha Patel. Investigation commenced.
+306,CR-2026-0065,2026-07-07 08:40:58,Approval Requested,Aisha Patel,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+307,CR-2026-0065,2026-07-07 15:22:03,Approved,Rachel Kensington,Pending Approval,Approved,Management sign-off granted by Rachel Kensington.
+308,CR-2026-0065,2026-07-07 18:42:35,Closed,Aisha Patel,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under KYC Operati...
+309,CR-2026-0066,2026-09-24 17:33:39,Created,Mateo Silva,,Draft,Request drafted by requester.
+310,CR-2026-0066,2026-09-24 18:26:39,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+311,CR-2026-0066,2026-09-24 19:56:39,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+312,CR-2026-0066,2026-09-25 07:52:16,Rejected,Sofia Rodriguez,Under Review,Rejected,Analyst concluded review with outcome: Rejected.
+313,CR-2026-0067,2026-07-16 21:05:57,Created,Oliver Queen,,Draft,Request drafted by requester.
+314,CR-2026-0067,2026-07-16 21:16:57,Submitted,Oliver Queen,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+315,CR-2026-0067,2026-07-17 00:13:57,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+316,CR-2026-0067,2026-07-17 20:09:45,Approval Requested,Sofia Rodriguez,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+317,CR-2026-0067,2026-07-18 16:05:34,Approved,David Sterling,Pending Approval,Approved,Management sign-off granted by David Sterling.
+318,CR-2026-0067,2026-07-19 02:03:28,Closed,Sofia Rodriguez,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+319,CR-2026-0068,2026-07-29 02:36:27,Created,Grace Hopper,,Draft,Request drafted by requester.
+320,CR-2026-0068,2026-07-29 04:36:27,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+321,CR-2026-0068,2026-07-29 06:06:27,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+322,CR-2026-0068,2026-07-29 16:03:20,Approval Requested,Chen Wei,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+323,CR-2026-0068,2026-07-30 02:00:14,Approved,Arthur Pendelton,Pending Approval,Approved,Management sign-off granted by Arthur Pendelton.
+324,CR-2026-0068,2026-07-30 06:58:40,Closed,Chen Wei,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+325,CR-2026-0069,2026-09-19 09:46:06,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+326,CR-2026-0069,2026-09-19 10:25:06,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+327,CR-2026-0069,2026-09-19 12:43:06,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+328,CR-2026-0069,2026-09-19 20:31:22,Approval Requested,Marcus Brody,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+329,CR-2026-0070,2026-07-10 02:37:35,Created,Mateo Silva,,Draft,Request drafted by requester.
+330,CR-2026-0070,2026-07-10 04:14:35,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+331,CR-2026-0070,2026-07-10 06:10:35,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+332,CR-2026-0070,2026-07-13 02:17:55,Approved,Chen Wei,Under Review,Approved,Analyst concluded review with outcome: Approved.
+333,CR-2026-0070,2026-07-14 07:29:38,Closed,Chen Wei,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Sanctions c...
+334,CR-2026-0071,2026-08-01 16:45:08,Created,Grace Hopper,,Draft,Request drafted by requester.
+335,CR-2026-0071,2026-08-01 18:35:08,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+336,CR-2026-0071,2026-08-01 21:13:08,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+337,CR-2026-0071,2026-08-02 04:55:47,Escalated,Chen Wei,Under Review,Escalated,Escalated to Operational Queue Manager. Reason: Complex jurisdictional nexus requiring specialist review.
+338,CR-2026-0071,2026-08-02 16:39:35,Approved,Chen Wei,Under Review,Approved,Analyst concluded review with outcome: Approved.
+339,CR-2026-0071,2026-08-02 21:41:12,Closed,Chen Wei,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+340,CR-2026-0072,2026-09-26 07:42:46,Created,Grace Hopper,,Draft,Request drafted by requester.
+341,CR-2026-0073,2026-08-12 10:43:44,Created,Claire Dupont,,Draft,Request drafted by requester.
+342,CR-2026-0073,2026-08-12 12:13:44,Submitted,Claire Dupont,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+343,CR-2026-0073,2026-08-12 14:14:44,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+344,CR-2026-0073,2026-08-16 05:33:38,Approved,Chen Wei,Under Review,Approved,Analyst concluded review with outcome: Approved.
+345,CR-2026-0073,2026-08-17 18:58:53,Closed,Chen Wei,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+346,CR-2026-0074,2026-07-24 01:59:39,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+347,CR-2026-0074,2026-07-24 02:31:39,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+348,CR-2026-0074,2026-07-24 05:31:39,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+349,CR-2026-0074,2026-07-24 13:24:27,Approval Requested,Liam O'Connor,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+350,CR-2026-0074,2026-07-24 21:17:15,Approved,Arthur Pendelton,Pending Approval,Approved,Management sign-off granted by Arthur Pendelton.
+351,CR-2026-0074,2026-07-25 01:13:39,Closed,Liam O'Connor,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under KYC Operati...
+352,CR-2026-0075,2026-09-11 04:03:12,Created,Mateo Silva,,Draft,Request drafted by requester.
+353,CR-2026-0075,2026-09-11 04:35:12,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+354,CR-2026-0075,2026-09-11 05:22:12,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+355,CR-2026-0075,2026-09-17 00:13:20,Rejected,Chen Wei,Under Review,Rejected,Analyst concluded review with outcome: Rejected.
+356,CR-2026-0075,2026-09-19 11:43:49,Closed,Chen Wei,Rejected,Closed,Case finalized and archived. Notes: Review concluded with rejection. Counterparty documentation ...
+357,CR-2026-0076,2026-09-15 05:00:15,Created,Oliver Queen,,Draft,Request drafted by requester.
+358,CR-2026-0076,2026-09-15 05:34:15,Submitted,Oliver Queen,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+359,CR-2026-0076,2026-09-15 06:59:15,Assigned,Aisha Patel,Submitted,Under Review,Case assigned to analyst Aisha Patel. Investigation commenced.
+360,CR-2026-0076,2026-09-15 14:08:16,Approval Requested,Aisha Patel,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+361,CR-2026-0076,2026-09-15 15:34:19,Approved,David Sterling,Pending Approval,Approved,Management sign-off granted by David Sterling.
+362,CR-2026-0077,2026-09-25 22:25:06,Created,James Wilson,,Draft,Request drafted by requester.
+363,CR-2026-0077,2026-09-26 00:11:06,Submitted,James Wilson,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+364,CR-2026-0077,2026-09-26 00:30:06,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+365,CR-2026-0078,2026-08-10 14:00:52,Created,Grace Hopper,,Draft,Request drafted by requester.
+366,CR-2026-0078,2026-08-10 15:44:52,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+367,CR-2026-0078,2026-08-10 18:12:52,Assigned,Aisha Patel,Submitted,Under Review,Case assigned to analyst Aisha Patel. Investigation commenced.
+368,CR-2026-0078,2026-08-10 23:44:47,Approval Requested,Aisha Patel,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+369,CR-2026-0078,2026-08-11 05:16:41,Approved,Arthur Pendelton,Pending Approval,Approved,Management sign-off granted by Arthur Pendelton.
+370,CR-2026-0078,2026-08-11 08:02:39,Closed,Aisha Patel,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+371,CR-2026-0079,2026-09-20 10:35:14,Created,Mateo Silva,,Draft,Request drafted by requester.
+372,CR-2026-0079,2026-09-20 10:53:14,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+373,CR-2026-0079,2026-09-20 13:01:14,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+374,CR-2026-0080,2026-07-28 17:51:18,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+375,CR-2026-0080,2026-07-28 19:06:18,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+376,CR-2026-0080,2026-07-28 19:50:18,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+377,CR-2026-0080,2026-07-29 19:55:00,Approval Requested,Chen Wei,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+378,CR-2026-0080,2026-07-30 19:59:42,Approved,Rachel Kensington,Pending Approval,Approved,Management sign-off granted by Rachel Kensington.
+379,CR-2026-0080,2026-07-31 08:02:03,Closed,Chen Wei,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+380,CR-2026-0081,2026-09-25 12:01:25,Created,Claire Dupont,,Draft,Request drafted by requester.
+381,CR-2026-0081,2026-09-25 12:35:25,Submitted,Claire Dupont,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+382,CR-2026-0082,2026-09-21 03:19:35,Created,Grace Hopper,,Draft,Request drafted by requester.
+383,CR-2026-0082,2026-09-21 03:43:35,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+384,CR-2026-0082,2026-09-21 04:15:35,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+385,CR-2026-0083,2026-09-25 05:13:10,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+386,CR-2026-0084,2026-09-14 10:07:17,Created,Mateo Silva,,Draft,Request drafted by requester.
+387,CR-2026-0084,2026-09-14 11:44:17,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+388,CR-2026-0084,2026-09-14 14:32:17,Assigned,Elena Vance,Submitted,Under Review,Case assigned to analyst Elena Vance. Investigation commenced.
+389,CR-2026-0085,2026-07-11 04:44:47,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+390,CR-2026-0085,2026-07-11 05:33:47,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+391,CR-2026-0085,2026-07-11 08:11:47,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+392,CR-2026-0085,2026-07-13 15:47:39,Approved,Sofia Rodriguez,Under Review,Approved,Analyst concluded review with outcome: Approved.
+393,CR-2026-0085,2026-07-14 15:37:19,Closed,Sofia Rodriguez,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+394,CR-2026-0086,2026-07-04 10:42:43,Created,James Wilson,,Draft,Request drafted by requester.
+395,CR-2026-0086,2026-07-04 12:33:43,Submitted,James Wilson,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+396,CR-2026-0086,2026-07-04 13:34:43,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+397,CR-2026-0086,2026-07-04 21:07:45,Approval Requested,Chen Wei,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+398,CR-2026-0086,2026-07-05 04:40:47,Approved,Rachel Kensington,Pending Approval,Approved,Management sign-off granted by Rachel Kensington.
+399,CR-2026-0086,2026-07-05 08:27:18,Closed,Chen Wei,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Policy & Go...
+400,CR-2026-0087,2026-09-24 22:04:13,Created,Grace Hopper,,Draft,Request drafted by requester.
+401,CR-2026-0087,2026-09-24 23:16:13,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+402,CR-2026-0087,2026-09-25 01:27:13,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+403,CR-2026-0088,2026-09-11 17:37:16,Created,Oliver Queen,,Draft,Request drafted by requester.
+404,CR-2026-0088,2026-09-11 17:48:16,Submitted,Oliver Queen,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+405,CR-2026-0088,2026-09-11 20:38:16,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+406,CR-2026-0088,2026-09-13 14:50:42,Approval Requested,Marcus Brody,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+407,CR-2026-0088,2026-09-15 09:03:09,Approved,Rachel Kensington,Pending Approval,Approved,Management sign-off granted by Rachel Kensington.
+408,CR-2026-0088,2026-09-16 06:09:22,Closed,Marcus Brody,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+409,CR-2026-0089,2026-08-26 10:03:15,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+410,CR-2026-0089,2026-08-26 11:34:15,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+411,CR-2026-0089,2026-08-26 12:41:15,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+412,CR-2026-0089,2026-08-26 16:00:40,Escalated,Sofia Rodriguez,Under Review,Escalated,Escalated to Compliance Team Lead. Reason: Complex jurisdictional nexus requiring specialist review.
+413,CR-2026-0089,2026-08-27 08:00:16,Approval Requested,Sofia Rodriguez,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+414,CR-2026-0089,2026-08-27 23:59:52,Approved,Rachel Kensington,Pending Approval,Approved,Management sign-off granted by Rachel Kensington.
+415,CR-2026-0089,2026-08-28 07:59:39,Closed,Sofia Rodriguez,Rejected,Closed,Case finalized and archived. Notes: Review concluded with rejection. Counterparty documentation ...
+416,CR-2026-0090,2026-09-26 03:35:47,Created,Grace Hopper,,Draft,Request drafted by requester.
+417,CR-2026-0090,2026-09-26 04:28:47,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+418,CR-2026-0091,2026-09-25 15:10:38,Created,Mateo Silva,,Draft,Request drafted by requester.
+419,CR-2026-0091,2026-09-25 15:17:38,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+420,CR-2026-0091,2026-09-25 17:58:38,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+421,CR-2026-0091,2026-09-25 22:24:14,Approval Requested,Liam O'Connor,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+422,CR-2026-0091,2026-09-26 01:19:27,Approved,David Sterling,Pending Approval,Approved,Management sign-off granted by David Sterling.
+423,CR-2026-0092,2026-07-12 10:43:22,Created,Oliver Queen,,Draft,Request drafted by requester.
+424,CR-2026-0092,2026-07-12 11:34:22,Submitted,Oliver Queen,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+425,CR-2026-0092,2026-07-12 13:08:22,Assigned,Elena Vance,Submitted,Under Review,Case assigned to analyst Elena Vance. Investigation commenced.
+426,CR-2026-0092,2026-07-12 14:39:51,Approval Requested,Elena Vance,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+427,CR-2026-0092,2026-07-12 16:11:20,Approved,Rachel Kensington,Pending Approval,Approved,Management sign-off granted by Rachel Kensington.
+428,CR-2026-0092,2026-07-12 16:57:05,Closed,Elena Vance,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+429,CR-2026-0093,2026-08-06 04:17:10,Created,Grace Hopper,,Draft,Request drafted by requester.
+430,CR-2026-0093,2026-08-06 04:46:10,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+431,CR-2026-0093,2026-08-06 05:51:10,Assigned,Aisha Patel,Submitted,Under Review,Case assigned to analyst Aisha Patel. Investigation commenced.
+432,CR-2026-0093,2026-08-07 05:03:26,Approval Requested,Aisha Patel,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+433,CR-2026-0093,2026-08-08 04:15:43,Approved,David Sterling,Pending Approval,Approved,Management sign-off granted by David Sterling.
+434,CR-2026-0093,2026-08-08 15:51:51,Closed,Aisha Patel,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Sanctions c...
+435,CR-2026-0094,2026-08-09 02:53:39,Created,Mateo Silva,,Draft,Request drafted by requester.
+436,CR-2026-0094,2026-08-09 04:34:39,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+437,CR-2026-0094,2026-08-09 06:11:39,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+438,CR-2026-0094,2026-08-09 18:55:03,Approval Requested,Sofia Rodriguez,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+439,CR-2026-0094,2026-08-10 07:38:27,Approved,Arthur Pendelton,Pending Approval,Approved,Management sign-off granted by Arthur Pendelton.
+440,CR-2026-0094,2026-08-10 14:00:09,Closed,Sofia Rodriguez,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+441,CR-2026-0095,2026-08-24 20:22:57,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+442,CR-2026-0095,2026-08-24 21:02:57,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+443,CR-2026-0095,2026-08-24 21:31:57,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+444,CR-2026-0095,2026-09-01 23:27:14,Approved,Sofia Rodriguez,Under Review,Approved,Analyst concluded review with outcome: Approved.
+445,CR-2026-0095,2026-09-05 10:33:46,Closed,Sofia Rodriguez,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Sanctions c...
+446,CR-2026-0096,2026-07-31 22:57:03,Created,James Wilson,,Draft,Request drafted by requester.
+447,CR-2026-0096,2026-07-31 23:51:03,Submitted,James Wilson,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+448,CR-2026-0096,2026-08-01 00:54:03,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+449,CR-2026-0096,2026-08-02 00:02:17,Approval Requested,Liam O'Connor,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+450,CR-2026-0096,2026-08-02 23:10:31,Approved,David Sterling,Pending Approval,Approved,Management sign-off granted by David Sterling.
+451,CR-2026-0096,2026-08-03 10:44:39,Closed,Liam O'Connor,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+452,CR-2026-0097,2026-06-30 03:24:54,Created,James Wilson,,Draft,Request drafted by requester.
+453,CR-2026-0097,2026-06-30 03:39:54,Submitted,James Wilson,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+454,CR-2026-0097,2026-06-30 06:08:54,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+455,CR-2026-0097,2026-07-01 10:12:47,Approved,Sofia Rodriguez,Under Review,Approved,Analyst concluded review with outcome: Approved.
+456,CR-2026-0097,2026-07-01 22:14:27,Closed,Sofia Rodriguez,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+457,CR-2026-0098,2026-07-25 00:44:45,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+458,CR-2026-0098,2026-07-25 00:55:45,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+459,CR-2026-0098,2026-07-25 02:22:45,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+460,CR-2026-0098,2026-07-25 17:50:23,Rejected,Chen Wei,Under Review,Rejected,Analyst concluded review with outcome: Rejected.
+461,CR-2026-0098,2026-07-26 00:27:57,Closed,Chen Wei,Rejected,Closed,Case finalized and archived. Notes: Review concluded with rejection. Counterparty documentation ...
+462,CR-2026-0099,2026-09-25 01:06:36,Created,Claire Dupont,,Draft,Request drafted by requester.
+463,CR-2026-0099,2026-09-25 02:35:36,Submitted,Claire Dupont,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+464,CR-2026-0099,2026-09-25 04:30:36,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+465,CR-2026-0099,2026-09-25 07:17:01,Approval Requested,Marcus Brody,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+466,CR-2026-0099,2026-09-25 10:24:36,Approved,Rachel Kensington,Pending Approval,Approved,Management sign-off granted by Rachel Kensington.
+467,CR-2026-0100,2026-07-23 00:10:43,Created,Claire Dupont,,Draft,Request drafted by requester.
+468,CR-2026-0100,2026-07-23 01:49:43,Submitted,Claire Dupont,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+469,CR-2026-0100,2026-07-23 02:50:43,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+470,CR-2026-0100,2026-07-23 08:38:34,Approval Requested,Chen Wei,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+471,CR-2026-0100,2026-07-23 14:26:24,Approved,Arthur Pendelton,Pending Approval,Approved,Management sign-off granted by Arthur Pendelton.
+472,CR-2026-0100,2026-07-23 17:20:19,Closed,Chen Wei,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+473,CR-2026-0101,2026-09-25 02:06:54,Created,Claire Dupont,,Draft,Request drafted by requester.
+474,CR-2026-0101,2026-09-25 03:59:54,Submitted,Claire Dupont,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+475,CR-2026-0101,2026-09-25 06:32:54,Assigned,Elena Vance,Submitted,Under Review,Case assigned to analyst Elena Vance. Investigation commenced.
+476,CR-2026-0102,2026-09-07 22:12:43,Created,Mateo Silva,,Draft,Request drafted by requester.
+477,CR-2026-0102,2026-09-07 23:05:43,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+478,CR-2026-0102,2026-09-08 00:02:43,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+479,CR-2026-0102,2026-09-16 17:30:59,Approved,Marcus Brody,Under Review,Approved,Analyst concluded review with outcome: Approved.
+480,CR-2026-0102,2026-09-20 11:17:22,Closed,Marcus Brody,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Sanctions c...
+481,CR-2026-0103,2026-08-26 06:35:42,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+482,CR-2026-0103,2026-08-26 08:15:42,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+483,CR-2026-0103,2026-08-26 09:19:42,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+484,CR-2026-0103,2026-08-27 11:14:41,Approved,Liam O'Connor,Under Review,Approved,Analyst concluded review with outcome: Approved.
+485,CR-2026-0103,2026-08-27 22:21:07,Closed,Liam O'Connor,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under KYC Operati...
+486,CR-2026-0104,2026-08-08 10:18:46,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+487,CR-2026-0104,2026-08-08 11:16:46,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+488,CR-2026-0104,2026-08-08 13:06:46,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+489,CR-2026-0104,2026-08-08 19:12:14,Approval Requested,Marcus Brody,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+490,CR-2026-0104,2026-08-09 01:17:42,Approved,Rachel Kensington,Pending Approval,Approved,Management sign-off granted by Rachel Kensington.
+491,CR-2026-0104,2026-08-09 04:20:26,Closed,Marcus Brody,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+492,CR-2026-0105,2026-07-18 02:32:09,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+493,CR-2026-0105,2026-07-18 03:11:09,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+494,CR-2026-0105,2026-07-18 03:32:09,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+495,CR-2026-0105,2026-07-18 10:41:11,Approval Requested,Liam O'Connor,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+496,CR-2026-0105,2026-07-18 17:50:13,Approved,David Sterling,Pending Approval,Approved,Management sign-off granted by David Sterling.
+497,CR-2026-0105,2026-07-18 21:24:44,Closed,Liam O'Connor,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under KYC Operati...
+498,CR-2026-0106,2026-08-31 06:21:27,Created,James Wilson,,Draft,Request drafted by requester.
+499,CR-2026-0106,2026-08-31 07:06:27,Submitted,James Wilson,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+500,CR-2026-0106,2026-08-31 08:34:27,Assigned,Elena Vance,Submitted,Under Review,Case assigned to analyst Elena Vance. Investigation commenced.
+501,CR-2026-0106,2026-09-02 10:21:55,Approved,Elena Vance,Under Review,Approved,Analyst concluded review with outcome: Approved.
+502,CR-2026-0106,2026-09-03 07:42:15,Closed,Elena Vance,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+503,CR-2026-0107,2026-09-17 19:37:37,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+504,CR-2026-0107,2026-09-17 21:37:37,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+505,CR-2026-0107,2026-09-17 22:47:37,Assigned,Elena Vance,Submitted,Under Review,Case assigned to analyst Elena Vance. Investigation commenced.
+506,CR-2026-0108,2026-08-30 04:59:26,Created,James Wilson,,Draft,Request drafted by requester.
+507,CR-2026-0108,2026-08-30 05:19:26,Submitted,James Wilson,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+508,CR-2026-0108,2026-08-30 08:06:26,Assigned,Elena Vance,Submitted,Under Review,Case assigned to analyst Elena Vance. Investigation commenced.
+509,CR-2026-0108,2026-08-31 00:11:43,Approval Requested,Elena Vance,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+510,CR-2026-0108,2026-08-31 16:16:59,Approved,David Sterling,Pending Approval,Approved,Management sign-off granted by David Sterling.
+511,CR-2026-0108,2026-09-01 00:19:37,Closed,Elena Vance,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Sanctions c...
+512,CR-2026-0109,2026-09-18 13:05:16,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+513,CR-2026-0109,2026-09-18 13:55:16,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+514,CR-2026-0109,2026-09-18 15:42:16,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+515,CR-2026-0109,2026-09-19 14:04:13,Approved,Marcus Brody,Under Review,Approved,Analyst concluded review with outcome: Approved.
+516,CR-2026-0109,2026-09-19 23:39:20,Closed,Marcus Brody,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under KYC Operati...
+517,CR-2026-0110,2026-08-17 15:30:13,Created,Oliver Queen,,Draft,Request drafted by requester.
+518,CR-2026-0110,2026-08-17 16:35:13,Submitted,Oliver Queen,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+519,CR-2026-0110,2026-08-17 17:07:13,Assigned,Elena Vance,Submitted,Under Review,Case assigned to analyst Elena Vance. Investigation commenced.
+520,CR-2026-0110,2026-08-18 02:10:57,Escalated,Elena Vance,Under Review,Escalated,Escalated to Operational Queue Manager. Reason: Complex jurisdictional nexus requiring specialist review.
+521,CR-2026-0110,2026-08-20 17:45:03,Approved,Elena Vance,Under Review,Approved,Analyst concluded review with outcome: Approved.
+522,CR-2026-0110,2026-08-21 20:59:39,Closed,Elena Vance,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+523,CR-2026-0111,2026-09-18 18:16:29,Created,James Wilson,,Draft,Request drafted by requester.
+524,CR-2026-0111,2026-09-18 20:05:29,Submitted,James Wilson,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+525,CR-2026-0111,2026-09-18 22:18:29,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+526,CR-2026-0111,2026-09-19 10:05:50,Escalated,System Automation,Under Review,Escalated,Escalated to Compliance Team Lead. Reason: Automated escalation: Target SLA turnaround breached.
+527,CR-2026-0112,2026-08-25 15:20:18,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+528,CR-2026-0112,2026-08-25 15:30:18,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+529,CR-2026-0112,2026-08-25 18:04:18,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+530,CR-2026-0112,2026-08-28 06:35:20,Approved,Marcus Brody,Under Review,Approved,Analyst concluded review with outcome: Approved.
+531,CR-2026-0112,2026-08-29 08:31:30,Closed,Marcus Brody,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+532,CR-2026-0113,2026-07-09 16:19:32,Created,Mateo Silva,,Draft,Request drafted by requester.
+533,CR-2026-0113,2026-07-09 17:06:32,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+534,CR-2026-0113,2026-07-09 18:47:32,Assigned,Aisha Patel,Submitted,Under Review,Case assigned to analyst Aisha Patel. Investigation commenced.
+535,CR-2026-0113,2026-07-11 07:54:13,Approval Requested,Aisha Patel,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+536,CR-2026-0113,2026-07-12 21:00:54,Approved,Arthur Pendelton,Pending Approval,Approved,Management sign-off granted by Arthur Pendelton.
+537,CR-2026-0113,2026-07-13 15:34:15,Closed,Aisha Patel,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+538,CR-2026-0114,2026-07-14 22:42:26,Created,Oliver Queen,,Draft,Request drafted by requester.
+539,CR-2026-0114,2026-07-15 00:20:26,Submitted,Oliver Queen,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+540,CR-2026-0114,2026-07-15 01:57:26,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+541,CR-2026-0114,2026-07-19 19:44:44,Approved,Liam O'Connor,Under Review,Approved,Analyst concluded review with outcome: Approved.
+542,CR-2026-0114,2026-07-21 20:30:44,Closed,Liam O'Connor,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Policy & Go...
+543,CR-2026-0115,2026-09-05 00:01:35,Created,Grace Hopper,,Draft,Request drafted by requester.
+544,CR-2026-0115,2026-09-05 01:02:35,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+545,CR-2026-0115,2026-09-05 03:08:35,Assigned,Aisha Patel,Submitted,Under Review,Case assigned to analyst Aisha Patel. Investigation commenced.
+546,CR-2026-0115,2026-09-07 09:00:35,Approved,Aisha Patel,Under Review,Approved,Analyst concluded review with outcome: Approved.
+547,CR-2026-0115,2026-09-08 08:05:43,Closed,Aisha Patel,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+548,CR-2026-0116,2026-08-19 20:13:13,Created,Grace Hopper,,Draft,Request drafted by requester.
+549,CR-2026-0116,2026-08-19 22:00:13,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+550,CR-2026-0116,2026-08-19 22:47:13,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+551,CR-2026-0116,2026-08-20 06:18:59,Approval Requested,Chen Wei,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+552,CR-2026-0116,2026-08-20 13:50:45,Approved,Arthur Pendelton,Pending Approval,Approved,Management sign-off granted by Arthur Pendelton.
+553,CR-2026-0116,2026-08-20 17:36:38,Closed,Chen Wei,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+554,CR-2026-0117,2026-09-17 23:25:57,Created,Oliver Queen,,Draft,Request drafted by requester.
+555,CR-2026-0117,2026-09-18 00:56:57,Submitted,Oliver Queen,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+556,CR-2026-0117,2026-09-18 02:46:57,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+557,CR-2026-0118,2026-09-22 10:23:16,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+558,CR-2026-0118,2026-09-22 10:42:16,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+559,CR-2026-0118,2026-09-22 13:04:16,Assigned,Elena Vance,Submitted,Under Review,Case assigned to analyst Elena Vance. Investigation commenced.
+560,CR-2026-0119,2026-09-01 01:20:31,Created,Grace Hopper,,Draft,Request drafted by requester.
+561,CR-2026-0119,2026-09-01 02:43:31,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+562,CR-2026-0119,2026-09-01 03:16:31,Assigned,Aisha Patel,Submitted,Under Review,Case assigned to analyst Aisha Patel. Investigation commenced.
+563,CR-2026-0119,2026-09-07 01:31:44,Approved,Aisha Patel,Under Review,Approved,Analyst concluded review with outcome: Approved.
+564,CR-2026-0119,2026-09-09 14:29:42,Closed,Aisha Patel,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+565,CR-2026-0120,2026-07-25 21:06:28,Created,Grace Hopper,,Draft,Request drafted by requester.
+566,CR-2026-0120,2026-07-25 22:41:28,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+567,CR-2026-0120,2026-07-26 01:39:28,Assigned,Elena Vance,Submitted,Under Review,Case assigned to analyst Elena Vance. Investigation commenced.
+568,CR-2026-0120,2026-07-27 05:15:16,Approved,Elena Vance,Under Review,Approved,Analyst concluded review with outcome: Approved.
+569,CR-2026-0120,2026-07-27 17:04:54,Closed,Elena Vance,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+570,CR-2026-0121,2026-09-22 23:09:50,Created,Mateo Silva,,Draft,Request drafted by requester.
+571,CR-2026-0121,2026-09-23 00:17:50,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+572,CR-2026-0121,2026-09-23 02:58:50,Assigned,Elena Vance,Submitted,Under Review,Case assigned to analyst Elena Vance. Investigation commenced.
+573,CR-2026-0121,2026-09-23 08:40:11,Approved,Elena Vance,Under Review,Approved,Analyst concluded review with outcome: Approved.
+574,CR-2026-0122,2026-06-28 16:10:49,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+575,CR-2026-0122,2026-06-28 17:47:49,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+576,CR-2026-0122,2026-06-28 18:20:49,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+577,CR-2026-0122,2026-06-29 13:57:11,Approval Requested,Liam O'Connor,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+578,CR-2026-0122,2026-06-30 09:33:34,Approved,David Sterling,Pending Approval,Approved,Management sign-off granted by David Sterling.
+579,CR-2026-0122,2026-06-30 19:21:46,Closed,Liam O'Connor,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Sanctions c...
+580,CR-2026-0123,2026-07-28 05:25:07,Created,Mateo Silva,,Draft,Request drafted by requester.
+581,CR-2026-0123,2026-07-28 05:53:07,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+582,CR-2026-0123,2026-07-28 06:47:07,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+583,CR-2026-0123,2026-07-31 00:18:19,Rejected,Marcus Brody,Under Review,Rejected,Analyst concluded review with outcome: Rejected.
+584,CR-2026-0123,2026-08-01 04:23:07,Closed,Marcus Brody,Rejected,Closed,Case finalized and archived. Notes: Review concluded with rejection. Counterparty documentation ...
+585,CR-2026-0124,2026-07-11 07:35:08,Created,Oliver Queen,,Draft,Request drafted by requester.
+586,CR-2026-0124,2026-07-11 08:12:08,Submitted,Oliver Queen,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+587,CR-2026-0124,2026-07-11 11:11:08,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+588,CR-2026-0124,2026-07-11 16:07:16,Escalated,Marcus Brody,Under Review,Escalated,Escalated to Head of Compliance. Reason: Complex jurisdictional nexus requiring specialist review.
+589,CR-2026-0124,2026-07-11 18:05:43,Approval Requested,Marcus Brody,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+590,CR-2026-0124,2026-07-11 20:04:10,Approved,Rachel Kensington,Pending Approval,Approved,Management sign-off granted by Rachel Kensington.
+591,CR-2026-0124,2026-07-11 21:03:23,Closed,Marcus Brody,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+592,CR-2026-0125,2026-09-15 06:00:46,Created,Mateo Silva,,Draft,Request drafted by requester.
+593,CR-2026-0125,2026-09-15 07:55:46,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+594,CR-2026-0125,2026-09-15 09:56:46,Assigned,Elena Vance,Submitted,Under Review,Case assigned to analyst Elena Vance. Investigation commenced.
+595,CR-2026-0125,2026-09-17 11:50:07,Approval Requested,Elena Vance,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+596,CR-2026-0125,2026-09-19 13:43:27,Approved,Rachel Kensington,Pending Approval,Approved,Management sign-off granted by Rachel Kensington.
+597,CR-2026-0125,2026-09-20 14:40:07,Closed,Elena Vance,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+598,CR-2026-0126,2026-09-25 08:58:56,Created,Grace Hopper,,Draft,Request drafted by requester.
+599,CR-2026-0127,2026-08-11 14:10:40,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+600,CR-2026-0127,2026-08-11 14:58:40,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+601,CR-2026-0127,2026-08-11 16:47:40,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+602,CR-2026-0127,2026-08-13 16:49:38,Approval Requested,Sofia Rodriguez,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+603,CR-2026-0127,2026-08-15 16:51:36,Approved,Rachel Kensington,Pending Approval,Approved,Management sign-off granted by Rachel Kensington.
+604,CR-2026-0127,2026-08-16 16:52:35,Closed,Sofia Rodriguez,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+605,CR-2026-0128,2026-09-07 03:34:10,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+606,CR-2026-0128,2026-09-07 03:45:10,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+607,CR-2026-0128,2026-09-07 04:40:10,Assigned,Aisha Patel,Submitted,Under Review,Case assigned to analyst Aisha Patel. Investigation commenced.
+608,CR-2026-0128,2026-09-12 10:51:12,Approved,Aisha Patel,Under Review,Approved,Analyst concluded review with outcome: Approved.
+609,CR-2026-0128,2026-09-14 16:55:56,Closed,Aisha Patel,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+610,CR-2026-0129,2026-06-28 23:51:55,Created,Claire Dupont,,Draft,Request drafted by requester.
+611,CR-2026-0129,2026-06-29 00:55:55,Submitted,Claire Dupont,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+612,CR-2026-0129,2026-06-29 02:05:55,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+613,CR-2026-0129,2026-06-29 15:58:45,Approval Requested,Liam O'Connor,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+614,CR-2026-0129,2026-06-30 05:51:34,Approved,Rachel Kensington,Pending Approval,Approved,Management sign-off granted by Rachel Kensington.
+615,CR-2026-0129,2026-06-30 12:47:58,Closed,Liam O'Connor,Rejected,Closed,Case finalized and archived. Notes: Review concluded with rejection. Counterparty documentation ...
+616,CR-2026-0130,2026-09-17 02:25:11,Created,Mateo Silva,,Draft,Request drafted by requester.
+617,CR-2026-0130,2026-09-17 03:06:11,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+618,CR-2026-0130,2026-09-17 03:48:11,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+619,CR-2026-0131,2026-08-16 19:22:19,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+620,CR-2026-0131,2026-08-16 20:39:19,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+621,CR-2026-0131,2026-08-16 23:33:19,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+622,CR-2026-0131,2026-08-17 13:52:06,Approval Requested,Sofia Rodriguez,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+623,CR-2026-0131,2026-08-18 04:10:52,Approved,Arthur Pendelton,Pending Approval,Approved,Management sign-off granted by Arthur Pendelton.
+624,CR-2026-0131,2026-08-18 11:20:16,Closed,Sofia Rodriguez,Rejected,Closed,Case finalized and archived. Notes: Review concluded with rejection. Counterparty documentation ...
+625,CR-2026-0132,2026-09-25 05:37:07,Created,Mateo Silva,,Draft,Request drafted by requester.
+626,CR-2026-0132,2026-09-25 06:28:07,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+627,CR-2026-0133,2026-08-07 02:33:11,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+628,CR-2026-0133,2026-08-07 02:57:11,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+629,CR-2026-0133,2026-08-07 04:52:11,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+630,CR-2026-0133,2026-08-08 21:09:59,Approved,Sofia Rodriguez,Under Review,Approved,Analyst concluded review with outcome: Approved.
+631,CR-2026-0133,2026-08-09 14:26:11,Closed,Sofia Rodriguez,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+632,CR-2026-0134,2026-09-18 22:56:18,Created,Mateo Silva,,Draft,Request drafted by requester.
+633,CR-2026-0134,2026-09-19 00:31:18,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+634,CR-2026-0134,2026-09-19 00:50:18,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+635,CR-2026-0134,2026-09-19 06:31:19,Rejected,Sofia Rodriguez,Under Review,Rejected,Analyst concluded review with outcome: Rejected.
+636,CR-2026-0135,2026-09-17 15:46:10,Created,Grace Hopper,,Draft,Request drafted by requester.
+637,CR-2026-0135,2026-09-17 17:07:10,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+638,CR-2026-0135,2026-09-17 19:50:10,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+639,CR-2026-0135,2026-09-18 01:18:07,Approval Requested,Liam O'Connor,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+640,CR-2026-0136,2026-09-06 12:38:38,Created,Mateo Silva,,Draft,Request drafted by requester.
+641,CR-2026-0136,2026-09-06 14:10:38,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+642,CR-2026-0136,2026-09-06 16:10:38,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+643,CR-2026-0136,2026-09-08 18:03:55,Approval Requested,Marcus Brody,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+644,CR-2026-0136,2026-09-10 19:57:12,Approved,David Sterling,Pending Approval,Approved,Management sign-off granted by David Sterling.
+645,CR-2026-0136,2026-09-11 20:53:51,Closed,Marcus Brody,Rejected,Closed,Case finalized and archived. Notes: Review concluded with rejection. Counterparty documentation ...
+646,CR-2026-0137,2026-07-20 23:53:21,Created,Mateo Silva,,Draft,Request drafted by requester.
+647,CR-2026-0137,2026-07-21 01:28:21,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+648,CR-2026-0137,2026-07-21 02:27:21,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+649,CR-2026-0137,2026-07-21 17:41:24,Approval Requested,Marcus Brody,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+650,CR-2026-0137,2026-07-22 08:55:27,Approved,Rachel Kensington,Pending Approval,Approved,Management sign-off granted by Rachel Kensington.
+651,CR-2026-0137,2026-07-22 16:32:28,Closed,Marcus Brody,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under KYC Operati...
+652,CR-2026-0138,2026-07-24 19:30:31,Created,Mateo Silva,,Draft,Request drafted by requester.
+653,CR-2026-0138,2026-07-24 21:17:31,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+654,CR-2026-0138,2026-07-24 22:48:31,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+655,CR-2026-0138,2026-07-26 14:49:00,Approved,Chen Wei,Under Review,Approved,Analyst concluded review with outcome: Approved.
+656,CR-2026-0138,2026-07-27 07:57:47,Closed,Chen Wei,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+657,CR-2026-0139,2026-07-22 20:49:59,Created,Claire Dupont,,Draft,Request drafted by requester.
+658,CR-2026-0139,2026-07-22 21:34:59,Submitted,Claire Dupont,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+659,CR-2026-0139,2026-07-22 22:20:59,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+660,CR-2026-0139,2026-07-25 17:18:52,Approved,Liam O'Connor,Under Review,Approved,Analyst concluded review with outcome: Approved.
+661,CR-2026-0139,2026-07-26 22:00:50,Closed,Liam O'Connor,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+662,CR-2026-0140,2026-08-25 20:42:21,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+663,CR-2026-0140,2026-08-25 21:23:21,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+664,CR-2026-0140,2026-08-25 23:55:21,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+665,CR-2026-0140,2026-08-26 15:39:58,Approval Requested,Chen Wei,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+666,CR-2026-0140,2026-08-27 07:24:36,Approved,Arthur Pendelton,Pending Approval,Approved,Management sign-off granted by Arthur Pendelton.
+667,CR-2026-0140,2026-08-27 15:16:55,Closed,Chen Wei,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under KYC Operati...
+668,CR-2026-0141,2026-09-26 00:38:02,Created,Grace Hopper,,Draft,Request drafted by requester.
+669,CR-2026-0141,2026-09-26 00:49:02,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+670,CR-2026-0142,2026-07-24 20:02:51,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+671,CR-2026-0142,2026-07-24 20:24:51,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Financial Crime Compliance queue. SLA clock started.
+672,CR-2026-0142,2026-07-24 22:40:51,Assigned,Elena Vance,Submitted,Under Review,Case assigned to analyst Elena Vance. Investigation commenced.
+673,CR-2026-0142,2026-07-30 17:17:47,Approved,Elena Vance,Under Review,Approved,Analyst concluded review with outcome: Approved.
+674,CR-2026-0142,2026-08-02 04:42:11,Closed,Elena Vance,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+675,CR-2026-0143,2026-09-13 22:33:42,Created,Grace Hopper,,Draft,Request drafted by requester.
+676,CR-2026-0143,2026-09-13 22:49:42,Submitted,Grace Hopper,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+677,CR-2026-0143,2026-09-14 01:20:42,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+678,CR-2026-0143,2026-09-14 10:28:14,Escalated,System Automation,Under Review,Escalated,Escalated to Head of Compliance. Reason: Automated escalation: Target SLA turnaround breached.
+679,CR-2026-0144,2026-07-04 02:53:25,Created,Mateo Silva,,Draft,Request drafted by requester.
+680,CR-2026-0144,2026-07-04 03:02:25,Submitted,Mateo Silva,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+681,CR-2026-0144,2026-07-04 05:42:25,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+682,CR-2026-0144,2026-07-04 07:19:56,Approval Requested,Liam O'Connor,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+683,CR-2026-0144,2026-07-04 08:57:27,Approved,Rachel Kensington,Pending Approval,Approved,Management sign-off granted by Rachel Kensington.
+684,CR-2026-0144,2026-07-04 09:46:13,Closed,Liam O'Connor,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Sanctions c...
+685,CR-2026-0145,2026-07-07 18:34:11,Created,Oliver Queen,,Draft,Request drafted by requester.
+686,CR-2026-0145,2026-07-07 18:56:11,Submitted,Oliver Queen,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+687,CR-2026-0145,2026-07-07 21:08:11,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+688,CR-2026-0145,2026-07-08 19:32:01,Rejected,Sofia Rodriguez,Under Review,Rejected,Analyst concluded review with outcome: Rejected.
+689,CR-2026-0145,2026-07-09 05:07:57,Closed,Sofia Rodriguez,Rejected,Closed,Case finalized and archived. Notes: Review concluded with rejection. Counterparty documentation ...
+690,CR-2026-0146,2026-07-25 09:17:42,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+691,CR-2026-0146,2026-07-25 09:46:42,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+692,CR-2026-0146,2026-07-25 11:24:42,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+693,CR-2026-0146,2026-07-29 14:34:57,Approved,Marcus Brody,Under Review,Approved,Analyst concluded review with outcome: Approved.
+694,CR-2026-0146,2026-07-31 09:05:04,Closed,Marcus Brody,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under KYC Operati...
+695,CR-2026-0147,2026-09-18 02:39:29,Created,Tariq Al-Mansoor,,Draft,Request drafted by requester.
+696,CR-2026-0147,2026-09-18 03:33:29,Submitted,Tariq Al-Mansoor,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+697,CR-2026-0147,2026-09-18 06:14:29,Assigned,Marcus Brody,Submitted,Under Review,Case assigned to analyst Marcus Brody. Investigation commenced.
+698,CR-2026-0147,2026-09-20 12:57:42,Approved,Marcus Brody,Under Review,Approved,Analyst concluded review with outcome: Approved.
+699,CR-2026-0147,2026-09-21 12:24:48,Closed,Marcus Brody,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+700,CR-2026-0148,2026-08-24 12:16:18,Created,James Wilson,,Draft,Request drafted by requester.
+701,CR-2026-0148,2026-08-24 13:12:18,Submitted,James Wilson,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+702,CR-2026-0148,2026-08-24 14:42:18,Assigned,Chen Wei,Submitted,Under Review,Case assigned to analyst Chen Wei. Investigation commenced.
+703,CR-2026-0148,2026-08-25 12:28:14,Approval Requested,Chen Wei,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+704,CR-2026-0148,2026-08-26 10:14:10,Approved,Rachel Kensington,Pending Approval,Approved,Management sign-off granted by Rachel Kensington.
+705,CR-2026-0148,2026-08-26 21:07:08,Closed,Chen Wei,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Customer On...
+706,CR-2026-0149,2026-06-29 14:06:00,Created,Hannah Schmidt,,Draft,Request drafted by requester.
+707,CR-2026-0149,2026-06-29 14:58:00,Submitted,Hannah Schmidt,Draft,Submitted,Request formally submitted to Sanctions Advisory queue. SLA clock started.
+708,CR-2026-0149,2026-06-29 17:45:00,Assigned,Liam O'Connor,Submitted,Under Review,Case assigned to analyst Liam O'Connor. Investigation commenced.
+709,CR-2026-0149,2026-06-30 00:12:39,Approval Requested,Liam O'Connor,Under Review,Pending Approval,Analyst findings completed; routed to compliance management for sign-off.
+710,CR-2026-0149,2026-06-30 06:40:17,Approved,Arthur Pendelton,Pending Approval,Approved,Management sign-off granted by Arthur Pendelton.
+711,CR-2026-0149,2026-06-30 09:54:06,Closed,Liam O'Connor,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under AML Operati...
+712,CR-2026-0150,2026-09-09 10:19:23,Created,James Wilson,,Draft,Request drafted by requester.
+713,CR-2026-0150,2026-09-09 12:10:23,Submitted,James Wilson,Draft,Submitted,Request formally submitted to Regulatory Operations queue. SLA clock started.
+714,CR-2026-0150,2026-09-09 14:38:23,Assigned,Sofia Rodriguez,Submitted,Under Review,Case assigned to analyst Sofia Rodriguez. Investigation commenced.
+715,CR-2026-0150,2026-09-10 13:23:59,Approved,Sofia Rodriguez,Under Review,Approved,Analyst concluded review with outcome: Approved.
+716,CR-2026-0150,2026-09-10 23:09:15,Closed,Sofia Rodriguez,Approved,Closed,Case finalized and archived. Notes: Review successfully concluded and verified under Sanctions c...

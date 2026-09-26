@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ComplyFlow SharePoint Schema Specification",
+  "description": "Reference configuration artifact defining the operational SharePoint Online list architecture for ComplyFlow. This is a local design specification, NOT an export from a live Microsoft 365 tenant.",
+  "project": "ComplyFlow",
+  "version": "1.0.0",
+  "phase": "Phase 3 Design",
+  "lists": [
+    {
+      "listName": "ComplianceRequests",
+      "description": "Primary operational list for compliance review request intake, tracking, and management sign-off.",
+      "template": "GenericList",
+      "columns": [
+        { "name": "Title", "displayName": "Title", "type": "Text", "required": true, "maxLength": 150 },
+        { "name": "RequestID", "displayName": "Request ID", "type": "Text", "required": true, "maxLength": 20, "enforceUnique": true },
+        { "name": "RequestType", "displayName": "Request Type", "type": "Choice", "required": true, "choices": ["KYC Review", "PEP Review", "AML Transaction Inquiry", "Sanctions Review", "Policy Exception"] },
+        { "name": "ProcessArea", "displayName": "Process Area", "type": "Choice", "required": true, "choices": ["Customer Onboarding", "AML Operations", "KYC Operations", "Sanctions", "Policy & Governance"] },
+        { "name": "RiskLevel", "displayName": "Risk Level", "type": "Choice", "required": true, "choices": ["Low", "Medium", "High", "Critical"], "default": "Medium" },
+        { "name": "Priority", "displayName": "Priority", "type": "Choice", "required": true, "choices": ["Low", "Medium", "High", "Critical"], "default": "Medium" },
+        { "name": "Status", "displayName": "Status", "type": "Choice", "required": true, "choices": ["Draft", "Submitted", "Under Review", "Pending Approval", "Escalated", "Approved", "Rejected", "Closed"], "default": "Draft" },
+        { "name": "Description", "displayName": "Description", "type": "Note", "required": true },
+        { "name": "RequesterName", "displayName": "Requester Name", "type": "Text", "required": true, "maxLength": 100 },
+        { "name": "RequesterEmail", "displayName": "Requester Email", "type": "Text", "required": true, "maxLength": 150 },
+        { "name": "RequesterDepartment", "displayName": "Requester Department", "type": "Choice", "required": true, "choices": ["Corporate Onboarding", "Wealth Management", "Institutional Sales", "Trade Operations", "Treasury"] },
+        { "name": "AssignedAnalyst", "displayName": "Assigned Analyst", "type": "User", "required": false },
+        { "name": "AssignedAnalystEmail", "displayName": "Assigned Analyst Email", "type": "Text", "required": false, "maxLength": 150 },
+        { "name": "ComplianceTeam", "displayName": "Compliance Team", "type": "Choice", "required": true, "choices": ["Financial Crime Compliance", "Regulatory Operations", "Sanctions Advisory"] },
+        { "name": "SubmissionDateTime", "displayName": "Submission Date Time", "type": "DateTime", "required": false, "format": "DateTime" },
+        { "name": "TargetDueDateTime", "displayName": "Target Due Date Time", "type": "DateTime", "required": false, "format": "DateTime" },
+        { "name": "CompletionDateTime", "displayName": "Completion Date Time", "type": "DateTime", "required": false, "format": "DateTime" },
+        { "name": "SLATargetHours", "displayName": "SLA Target Hours", "type": "Number", "required": true, "decimals": 0 },
+        { "name": "SLABreachFlag", "displayName": "SLA Breach Flag", "type": "Boolean", "required": true, "default": false },
+        { "name": "ApprovalRequired", "displayName": "Approval Required", "type": "Boolean", "required": true, "default": false },
+        { "name": "ApprovedBy", "displayName": "Approved By", "type": "User", "required": false },
+        { "name": "ApprovalDate", "displayName": "Approval Date", "type": "DateTime", "required": false, "format": "DateTime" },
+        { "name": "EscalationFlag", "displayName": "Escalation Flag", "type": "Boolean", "required": true, "default": false },
+        { "name": "EscalatedTo", "displayName": "Escalated To", "type": "Text", "required": false, "maxLength": 100 },
+        { "name": "EscalationReason", "displayName": "Escalation Reason", "type": "Note", "required": false },
+        { "name": "ClosureNotes", "displayName": "Closure Notes", "type": "Note", "required": false },
+        { "name": "CreatedDate", "displayName": "Created Date", "type": "DateTime", "required": true, "format": "DateTime" },
+        { "name": "ModifiedDate", "displayName": "Modified Date", "type": "DateTime", "required": true, "format": "DateTime" }
+      ],
+      "views": [
+        { "name": "All Compliance Requests", "isDefault": true, "sort": { "field": "TargetDueDateTime", "ascending": true } },
+        { "name": "Active Compliance Queue", "filter": "Status ne 'Closed'", "sort": { "field": "TargetDueDateTime", "ascending": true } },
+        { "name": "Overdue Cases", "filter": "Status ne 'Closed' and SLABreachFlag eq 1", "sort": { "field": "TargetDueDateTime", "ascending": true } },
+        { "name": "Pending Approval Queue", "filter": "Status eq 'Pending Approval'", "sort": { "field": "TargetDueDateTime", "ascending": true } },
+        { "name": "Escalated Cases", "filter": "EscalationFlag eq 1", "sort": { "field": "ModifiedDate", "ascending": false } },
+        { "name": "Closed Cases Archive", "filter": "Status eq 'Closed'", "sort": { "field": "CompletionDateTime", "ascending": false } }
+      ]
+    },
+    {
+      "listName": "RequestAuditLog",
+      "description": "Milestone audit trail recording lifecycle events and status transitions.",
+      "template": "GenericList",
+      "columns": [
+        { "name": "Title", "displayName": "Request ID", "type": "Text", "required": true, "maxLength": 20 },
+        { "name": "AuditID", "displayName": "Audit ID", "type": "Number", "required": true, "decimals": 0, "enforceUnique": true },
+        { "name": "Timestamp", "displayName": "Timestamp", "type": "DateTime", "required": true, "format": "DateTime" },
+        { "name": "ActionType", "displayName": "Action Type", "type": "Choice", "required": true, "choices": ["Created", "Submitted", "Assigned", "Status Changed", "Escalated", "Approval Requested", "Approved", "Rejected", "Closed"] },
+        { "name": "PerformedBy", "displayName": "Performed By", "type": "Text", "required": true, "maxLength": 100 },
+        { "name": "OldStatus", "displayName": "Old Status", "type": "Text", "required": false, "maxLength": 30 },
+        { "name": "NewStatus", "displayName": "New Status", "type": "Text", "required": true, "maxLength": 30 },
+        { "name": "Comments", "displayName": "Comments", "type": "Note", "required": false }
+      ]
+    },
+    {
+      "listName": "SLAPolicies",
+      "description": "Reference table defining SLA targets, reminder thresholds, and governance mandates by risk level.",
+      "template": "GenericList",
+      "columns": [
+        { "name": "Title", "displayName": "Risk Level", "type": "Choice", "required": true, "choices": ["Critical", "High", "Medium", "Low"], "enforceUnique": true },
+        { "name": "SLATargetHours", "displayName": "SLA Target Hours", "type": "Number", "required": true, "decimals": 0 },
+        { "name": "WarningThresholdHours", "displayName": "Warning Threshold Hours", "type": "Number", "required": true, "decimals": 0 },
+        { "name": "ApprovalMandatory", "displayName": "Approval Mandatory", "type": "Boolean", "required": true, "default": false },
+        { "name": "DefaultEscalationRole", "displayName": "Default Escalation Role", "type": "Text", "required": true, "maxLength": 100 }
+      ],
+      "seedData": [
+        { "RiskLevel": "Critical", "SLATargetHours": 24, "WarningThresholdHours": 6, "ApprovalMandatory": true, "DefaultEscalationRole": "Head of Compliance" },
+        { "RiskLevel": "High", "SLATargetHours": 72, "WarningThresholdHours": 24, "ApprovalMandatory": true, "DefaultEscalationRole": "Compliance Team Lead" },
+        { "RiskLevel": "Medium", "SLATargetHours": 120, "WarningThresholdHours": 24, "ApprovalMandatory": false, "DefaultEscalationRole": "Operational Queue Manager" },
+        { "RiskLevel": "Low", "SLATargetHours": 240, "WarningThresholdHours": 48, "ApprovalMandatory": false, "DefaultEscalationRole": "Operations Supervisor" }
+      ]
+    }
+  ]
+}

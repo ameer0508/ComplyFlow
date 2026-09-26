@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ComplyFlow Power Automate Flow Architecture Specification",
+  "description": "Local Power Automate design and reference artifact — NOT an exported cloud flow package. Outlines trigger definitions, action chains, and logic expressions for manual configuration in Power Automate.",
+  "project": "ComplyFlow",
+  "version": "1.0.0",
+  "phase": "Phase 5 Specification",
+  "flows": [
+    {
+      "flowId": "CF-01",
+      "flowName": "Process New Compliance Request",
+      "type": "Automated",
+      "trigger": {
+        "connector": "SharePoint",
+        "event": "When an item is created",
+        "list": "ComplianceRequests",
+        "triggerCondition": "@equals(triggerOutputs()?['body/Status/Value'], 'Submitted')"
+      },
+      "actions": [
+        "Get matching policy from SLAPolicies by RiskLevel",
+        "Calculate TargetDueDateTime via addHours()",
+        "Update ComplianceRequests with SLA target and approval requirements",
+        "Create milestone record in RequestAuditLog (ActionType: Submitted)",
+        "Send confirmation email receipt to RequesterEmail"
+      ]
+    },
+    {
+      "flowId": "CF-02",
+      "flowName": "Track Case Assignment",
+      "type": "Automated",
+      "trigger": {
+        "connector": "SharePoint",
+        "event": "When an item is modified",
+        "list": "ComplianceRequests",
+        "triggerCondition": "@not(empty(triggerOutputs()?['body/AssignedAnalyst/Email']))"
+      },
+      "actions": [
+        "Verify AssignedAnalyst column modified via Get Changes token",
+        "Update Status to 'Under Review'",
+        "Create milestone record in RequestAuditLog (ActionType: Assigned)",
+        "Dispatch assignment notification card to AssignedAnalyst"
+      ]
+    },
+    {
+      "flowId": "CF-03",
+      "flowName": "Route Compliance Approval",
+      "type": "Automated",
+      "trigger": {
+        "connector": "SharePoint",
+        "event": "When an item is modified",
+        "list": "ComplianceRequests",
+        "triggerCondition": "@and(equals(triggerOutputs()?['body/Status/Value'], 'Pending Approval'), equals(triggerOutputs()?['body/ApprovalRequired'], true))"
+      },
+      "actions": [
+        "Create milestone record in RequestAuditLog (ActionType: Approval Requested)",
+        "Determine approver role (Critical -> Head of Compliance, High -> Team Lead)",
+        "Start and wait for an approval card (Approve/Reject)",
+        "Update ComplianceRequests with outcome, ApprovedBy, and ApprovalDate",
+        "Create milestone record in RequestAuditLog (ActionType: Approved / Rejected)",
+        "Send completion notification to Requester and AssignedAnalyst"
+      ]
+    },
+    {
+      "flowId": "CF-04",
+      "flowName": "Monitor Compliance SLA",
+      "type": "Scheduled",
+      "trigger": {
+        "connector": "Recurrence",
+        "interval": 1,
+        "frequency": "Day",
+        "schedule": { "hours": [8], "minutes": [0] }
+      },
+      "actions": [
+        "Query ComplianceRequests where Status ne 'Closed'",
+        "Evaluate TargetDueDateTime against current timestamp and warning window",
+        "If approaching deadline: send early-warning alert to AssignedAnalyst",
+        "If overdue and EscalationFlag eq false: update EscalationFlag, SLABreachFlag, EscalatedTo, create Escalated audit event, and alert supervisor"
+      ]
+    },
+    {
+      "flowId": "CF-05",
+      "flowName": "Record Status Change",
+      "type": "Automated",
+      "trigger": {
+        "connector": "SharePoint",
+        "event": "When an item is modified",
+        "list": "ComplianceRequests",
+        "triggerCondition": "@and(not(equals(triggerOutputs()?['body/Status/Value'], 'Submitted')), not(equals(triggerOutputs()?['body/Status/Value'], 'Pending Approval')), not(equals(triggerOutputs()?['body/Status/Value'], 'Closed')))"
+      },
+      "actions": [
+        "Verify Status column modified via Get Changes token",
+        "Create milestone record in RequestAuditLog (ActionType: Status Changed)"
+      ]
+    },
+    {
+      "flowId": "CF-06",
+      "flowName": "Process Case Closure",
+      "type": "Automated",
+      "trigger": {
+        "connector": "SharePoint",
+        "event": "When an item is modified",
+        "list": "ComplianceRequests",
+        "triggerCondition": "@equals(triggerOutputs()?['body/Status/Value'], 'Closed')"
+      },
+      "actions": [
+        "Verify CompletionDateTime populated; stamp utcNow() if empty",
+        "Create milestone record in RequestAuditLog (ActionType: Closed)",
+        "Dispatch archival confirmation email to Requester"
+      ]
+    }
+  ]
+}

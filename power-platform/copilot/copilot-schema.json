@@ -1,0 +1,128 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/copilotstudio/v1.0/bot-manifest.json",
+  "project": "ComplyFlow — Compliance Workflow & Process Intelligence Platform",
+  "phase": 7,
+  "component": "Ask ComplyFlow AI Intelligence Assistant",
+  "botDefinition": {
+    "displayName": "Ask ComplyFlow",
+    "description": "AI-assisted compliance operations assistant providing case summarization, SLA tracking, and audit log analysis.",
+    "version": "1.0.0",
+    "culture": "en-US",
+    "governancePillars": [
+      "Human-in-the-Loop",
+      "Zero Autonomous Compliance Action",
+      "Strict Source Grounding",
+      "Source-Grounded Hallucination Controls",
+      "Complete Auditability",
+      "Data Minimization",
+      "Sensitive Data Protection",
+      "Prompt Hardening",
+      "Role-Based Access Control",
+      "Query Logging",
+      "Mandatory Output Labeling",
+      "Human Escalation Pathway"
+    ]
+  },
+  "capabilities": [
+    {
+      "id": "CAP-01",
+      "name": "Natural Language KPI Questions",
+      "description": "Conversational retrieval of core operational metrics from governed SQL views and Power BI DAX measures",
+      "authoritativeSources": ["vw_active_backlog", "vw_request_performance", "ComplianceRequest"]
+    },
+    {
+      "id": "CAP-02",
+      "name": "Case Summarization",
+      "description": "Rapid synthesis of compliance request fields, risk tiers, and outstanding actions",
+      "authoritativeSources": ["ComplianceRequest", "RequestAuditLog"]
+    },
+    {
+      "id": "CAP-03",
+      "name": "Audit History Explanation",
+      "description": "Chronological narrative reconstruction of sequential case audit milestones",
+      "authoritativeSources": ["RequestAuditLog"]
+    },
+    {
+      "id": "CAP-04",
+      "name": "SLA Policy Explanation",
+      "description": "Plain-language explanation of regulatory turnaround targets, warning thresholds, and escalation pathways",
+      "authoritativeSources": ["SLAPolicy"]
+    },
+    {
+      "id": "CAP-05",
+      "name": "Operational Insight Generation",
+      "description": "Factual, descriptive observations of queue volume distribution and cycle times",
+      "authoritativeSources": ["vw_process_area_performance", "vw_risk_performance"]
+    },
+    {
+      "id": "CAP-06",
+      "name": "Process Improvement Assistance",
+      "description": "Exploratory hypotheses regarding workflow bottlenecks and approval dwell times",
+      "authoritativeSources": ["vw_request_performance"]
+    }
+  ],
+  "entities": [
+    {
+      "name": "ComplianceRequestID",
+      "type": "Regex",
+      "pattern": "(?i)CR-\\d{4}-\\d{4}"
+    },
+    {
+      "name": "RiskTier",
+      "type": "ClosedList",
+      "values": ["Critical", "High", "Medium", "Low"]
+    },
+    {
+      "name": "ProcessArea",
+      "type": "ClosedList",
+      "values": ["AML Operations", "Customer Onboarding", "KYC Operations", "Sanctions", "Policy & Governance"]
+    }
+  ],
+  "topics": [
+    {
+      "name": "Topic_KPI_Query",
+      "triggerPhrases": [
+        "How many active cases do we have?",
+        "What is our active backlog?",
+        "How many cases are overdue?",
+        "What is the historical SLA breach rate?",
+        "What is our average resolution time?"
+      ],
+      "actionType": "FlowCall",
+      "flowName": "Flow_GetOperationalKPIs"
+    },
+    {
+      "name": "Topic_Case_Summary",
+      "triggerPhrases": [
+        "Summarize case",
+        "Give me a summary of",
+        "Tell me about case",
+        "Case dossier"
+      ],
+      "actionType": "FlowCall",
+      "flowName": "Flow_GetCaseDossier"
+    },
+    {
+      "name": "Topic_Audit_History",
+      "triggerPhrases": [
+        "Explain audit history",
+        "Show timeline for",
+        "Audit trail",
+        "What happened on request"
+      ],
+      "actionType": "FlowCall",
+      "flowName": "Flow_GetCaseAuditTrail"
+    },
+    {
+      "name": "Topic_SLA_Policy",
+      "triggerPhrases": [
+        "What is the SLA for Critical?",
+        "What is the SLA for High?",
+        "Who is the escalation role?",
+        "Explain SLA policy"
+      ],
+      "actionType": "KnowledgeLookup",
+      "sourceTable": "SLAPolicy"
+    }
+  ]
+}

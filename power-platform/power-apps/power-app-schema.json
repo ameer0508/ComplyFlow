@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ComplyFlow Canvas App Design Specification",
+  "description": "Local Power Apps design/reference artifact — NOT an exported Power Apps package. Defines screen hierarchies, control bindings, and formulas for manual construction in Power Apps Studio.",
+  "project": "ComplyFlow",
+  "version": "1.0.0",
+  "phase": "Phase 4 Specification",
+  "screens": [
+    {
+      "screenName": "scr_Home",
+      "displayName": "Command Center",
+      "purpose": "Operational KPI summary and primary workflow navigation",
+      "containers": [
+        {
+          "name": "con_HomeKPIContainer",
+          "cards": [
+            { "name": "card_ActiveBacklog", "metric": "CountRows(Filter(ComplianceRequests, Status <> 'Closed'))", "label": "Active Backlog" },
+            { "name": "card_OverdueCases", "metric": "CountRows(Filter(ComplianceRequests, Status <> 'Closed' && (Now() > TargetDueDateTime || SLABreachFlag = true)))", "label": "Overdue Cases" },
+            { "name": "card_PendingApproval", "metric": "CountRows(Filter(ComplianceRequests, Status = 'Pending Approval'))", "label": "Pending Approval" },
+            { "name": "card_MyAssigned", "metric": "CountRows(Filter(ComplianceRequests, Status <> 'Closed' && (AssignedAnalyst.Email = varCurrentUser.Email || AssignedAnalystEmail = varCurrentUser.Email)))", "label": "Assigned to Me" }
+          ]
+        },
+        {
+          "name": "con_HomeNavigation",
+          "navigationActions": [
+            { "button": "btn_NavNewRequest", "targetScreen": "scr_NewRequest" },
+            { "button": "btn_NavMyQueue", "targetScreen": "scr_MyQueue" },
+            { "button": "btn_NavAllRequests", "targetScreen": "scr_AllRequests" }
+          ]
+        }
+      ]
+    },
+    {
+      "screenName": "scr_NewRequest",
+      "displayName": "New Compliance Request",
+      "purpose": "Intake form for submitting new compliance reviews with client-side required field validation",
+      "formFields": [
+        { "name": "txt_NewTitle", "type": "TextInput", "required": true, "mapsTo": "Title" },
+        { "name": "cmb_NewRequestType", "type": "Dropdown", "required": true, "mapsTo": "RequestType" },
+        { "name": "cmb_NewProcessArea", "type": "Dropdown", "required": true, "mapsTo": "ProcessArea" },
+        { "name": "cmb_NewRiskLevel", "type": "Dropdown", "required": true, "mapsTo": "RiskLevel" },
+        { "name": "cmb_NewPriority", "type": "Dropdown", "required": true, "mapsTo": "Priority" },
+        { "name": "cmb_NewDepartment", "type": "Dropdown", "required": true, "mapsTo": "RequesterDepartment" },
+        { "name": "txt_NewDescription", "type": "MultilineInput", "required": true, "mapsTo": "Description" }
+      ]
+    },
+    {
+      "screenName": "scr_MyQueue",
+      "displayName": "My Queue",
+      "purpose": "Personal worklist filtered by current user email and sorted by urgent deadline",
+      "gallery": {
+        "name": "gal_MyQueue",
+        "itemsFormula": "SortByColumns(Filter(ComplianceRequests, Status <> 'Closed', (AssignedAnalyst.Email = varCurrentUser.Email || AssignedAnalystEmail = varCurrentUser.Email), (IsBlank(txt_SearchMyQueue.Text) || StartsWith(RequestID, txt_SearchMyQueue.Text) || StartsWith(Title, txt_SearchMyQueue.Text))), 'TargetDueDateTime', SortOrder.Ascending)"
+      }
+    },
+    {
+      "screenName": "scr_AllRequests",
+      "displayName": "All Requests Browser",
+      "purpose": "Searchable case repository with multi-criteria filters for process area, risk, and status",
+      "gallery": {
+        "name": "gal_AllRequests",
+        "itemsFormula": "SortByColumns(Filter(ComplianceRequests, (IsBlank(txt_MasterSearch.Text) || StartsWith(RequestID, txt_MasterSearch.Text) || StartsWith(Title, txt_MasterSearch.Text)), (cmb_MasterProcessArea.Selected.Value = 'All' || ProcessArea.Value = cmb_MasterProcessArea.Selected.Value), (cmb_MasterRisk.Selected.Value = 'All' || RiskLevel.Value = cmb_MasterRisk.Selected.Value), (cmb_MasterStatus.Selected.Value = 'All' || Status.Value = cmb_MasterStatus.Selected.Value)), 'TargetDueDateTime', SortOrder.Ascending)"
+      }
+    },
+    {
+      "screenName": "scr_RequestDetails",
+      "displayName": "Request Details",
+      "purpose": "Comprehensive case dossier displaying metadata, live SLA countdown, approvals, escalations, and audit history",
+      "sections": [
+        "Case Information",
+        "Risk & Urgency",
+        "Ownership & Assignment",
+        "SLA Tracking",
+        "Governance & Approvals",
+        "Escalation Record",
+        "Audit Trail History"
+      ]
+    },
+    {
+      "screenName": "scr_CaseUpdate",
+      "displayName": "Case Update & Closure",
+      "purpose": "Operational action screen to reassign analysts, transition status, and record closure findings",
+      "updateFields": [
+        { "name": "cmb_UpdateStatus", "mapsTo": "Status" },
+        { "name": "txt_UpdateClosureNotes", "mapsTo": "ClosureNotes", "mandatoryIf": "Status eq 'Closed'" },
+        { "name": "chk_UpdateEscalate", "mapsTo": "EscalationFlag" },
+        { "name": "txt_UpdateEscalationReason", "mapsTo": "EscalationReason" }
+      ]
+    }
+  ]
+}

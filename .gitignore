@@ -1,0 +1,122 @@
+# ==============================================================================
+# ComplyFlow - .gitignore
+# Compliance Workflow & Process Intelligence Platform
+# ==============================================================================
+
+# --- Operating System Files ---
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Environment & Secret Files (CRITICAL - NEVER COMMIT) ---
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+secrets/
+private/
+credentials.json
+client_secret*.json
+token.json
+oauth_tokens/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints
+*-checkpoint.ipynb
+
+# --- Node.js / JavaScript (if utility tooling is added) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-store/
+
+# --- IDEs & Editors ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# --- Databases & Large Data Backups ---
+*.sqlite3-journal
+*.db-journal
+*.mdf
+*.ldf
+*.ndf
+*.bak
+*.dmp
+*.sql.gz
+*.sql.zip
+# AdventureWorks full backups should never be committed into the repo
+data/sample-reference/adventureworks/*.bak
+data/sample-reference/adventureworks/*.mdf
+data/sample-reference/adventureworks/*.ldf
+
+# --- Power Platform & Power BI Local Cache / Large Binaries ---
+*.pbit.tmp
+*.pbix.tmp
+# Avoid committing raw temporary exports with cached credential data
+*.msapp.cache
